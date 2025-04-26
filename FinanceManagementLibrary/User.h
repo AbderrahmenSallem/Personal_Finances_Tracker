@@ -55,4 +55,4 @@ namespace Finance_Management
 		std::string m_email;
 		std::vector<std::unique_ptr<Account>> m_accounts;
 	};
-}
+} // namespace Finance_Management

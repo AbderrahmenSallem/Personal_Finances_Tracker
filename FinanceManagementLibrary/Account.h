@@ -1,7 +1,26 @@
+/**  
+* \file Account.h  
+* \brief File containing the interface of the Account class used for managing and manipulating financial accounts.  
+* \author Abderrahmen Sallem  
+* \version 1.0  
+*/
 #pragma once
 #include "pch.h"
 namespace Finance_Management
 {
+	/**
+	* \class Account
+	* \brief This class is used for managing and manipulating financial accounts.
+	*
+	*        The class maintains a consistent state for account information.
+	*        It validates the data assigned to it.
+	*        This class can be used to represent various types of accounts,
+	*        perform operations such as comparisons, and manage account details.
+	*        The class ensures that the account data is valid, and it is the
+	*        responsibility of the user to provide valid input.
+	* \invariant The validity of the account data can be ensured by using the
+	*            provided setter methods and verifying the state of the object.
+	*/
 	class Account
 	{
 	public:
@@ -33,4 +52,4 @@ namespace Finance_Management
 		double m_balance;
 		std::string m_currency;
 	};
-}
+} // namespace Finance_Management
