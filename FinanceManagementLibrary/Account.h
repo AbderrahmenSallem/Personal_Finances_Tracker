@@ -44,6 +44,7 @@ namespace Finance_Management
 		bool operator>=(const Account& p_account) const;
 		bool operator!=(const Account& p_account) const;
 		friend std::ostream& operator<<(std::ostream& p_os, const Account& p_account);
+		std::string accountFormat() const;
 		void verifieInvariant() const;
 	private:
 		int m_accountId;

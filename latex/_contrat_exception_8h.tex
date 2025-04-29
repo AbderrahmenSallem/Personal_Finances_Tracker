@@ -1,0 +1,130 @@
+\doxysection{Finance\+Management\+Library/\+Contrat\+Exception.h File Reference}
+\hypertarget{_contrat_exception_8h}{}\label{_contrat_exception_8h}\index{FinanceManagementLibrary/ContratException.h@{FinanceManagementLibrary/ContratException.h}}
+
+
+Hiérarchie de classe pour la gestion des erreurs par la théorie du contrat.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_contrat_exception}{Contrat\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe de base des exceptions de contrat. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_assertion_exception}{Assertion\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs d\textquotesingle{}assertion. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_precondition_exception}{Precondition\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs de précondition. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_postcondition_exception}{Postcondition\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs de postcondition. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_invariant_exception}{Invariant\+Exception}}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des erreurs d\textquotesingle{}invariant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_contrat_exception_8h_a52dddc2c198c58b53b201c313934e40c}{INVARIANTS}}()
+\item 
+\#define \mbox{\hyperlink{_contrat_exception_8h_abe6e3e0ff48f8595570e6485b506a8c4}{ASSERTION}}(f)
+\item 
+\#define \mbox{\hyperlink{_contrat_exception_8h_acb3361bd87fc697a57b7286a9998c106}{PRECONDITION}}(f)
+\item 
+\#define \mbox{\hyperlink{_contrat_exception_8h_a438b75c0c77a1ce8d1e914f9f04ea548}{POSTCONDITION}}(f)
+\item 
+\#define \mbox{\hyperlink{_contrat_exception_8h_a08f80155f47e05681c2b9bb9c5f6fffe}{INVARIANT}}(f)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hiérarchie de classe pour la gestion des erreurs par la théorie du contrat. 
+
+contenant la déclaration de la classe \doxylink{class_contrat_exception}{Contrat\+Exception} et de ses héritiers 
+
+Ces classes constituent la hiérarchie pour la gestion de la théorie du contrat. Elle maintient les données nécessaires à la sauvegarde des renseignements de l\textquotesingle{}erreur. Cette classe et sa hiérarchie sont intéressantes lors de l\textquotesingle{}utilisation des exceptions.
+
+En release, définir la constante NDEBUG pour désactiver les Macros
+
+
+\begin{DoxyPre}
+Classes:
+std::logic\_error        Classe de base des exceptions logiques
+\doxylink{class_contrat_exception}{ContratException}:       Classe de base des exceptions de contrat.
+\doxylink{class_assertion_exception}{AssertionException}:     Classe de gestion des erreurs d'assertion.
+\doxylink{class_precondition_exception}{PreconditionException}:  Classe de gestion des erreurs de précondition.
+\doxylink{class_postcondition_exception}{PostconditionException}: Classe de gestion des erreurs de postcondition.
+\doxylink{class_invariant_exception}{InvariantException}:     Classe de gestion des erreurs d'invariant.
+
+Attributs:
+     std::string  m\_expression: Le test logique qui a échoué.
+     std::string  m\_fichier:    Le nom du fichier.
+     unsigned int m\_ligne:      Le numéro de ligne
+\end{DoxyPre}
+
+
+\begin{DoxyNote}{Note}
+Cette hiérarchie de classe est inspiré du livre de Horstmann\+: Mastering object oriented design in C++, 1995, Ref\+:12-\/2007257. Voir la classe Chi\+Error fournie avec le livre.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+YR, TE 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V3.\+0 révisée balises Doxygen C++ normes 
+\end{DoxyVersion}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_contrat_exception_8h_abe6e3e0ff48f8595570e6485b506a8c4}\index{ContratException.h@{ContratException.h}!ASSERTION@{ASSERTION}}
+\index{ASSERTION@{ASSERTION}!ContratException.h@{ContratException.h}}
+\doxysubsubsection{\texorpdfstring{ASSERTION}{ASSERTION}}
+{\footnotesize\ttfamily \label{_contrat_exception_8h_abe6e3e0ff48f8595570e6485b506a8c4} 
+\#define ASSERTION(\begin{DoxyParamCaption}\item[{}]{f}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(f))\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_assertion_exception}{AssertionException}}(\_\_FILE\_\_,\_\_LINE\_\_,\ \#f);}
+
+\end{DoxyCode}
+\Hypertarget{_contrat_exception_8h_a08f80155f47e05681c2b9bb9c5f6fffe}\index{ContratException.h@{ContratException.h}!INVARIANT@{INVARIANT}}
+\index{INVARIANT@{INVARIANT}!ContratException.h@{ContratException.h}}
+\doxysubsubsection{\texorpdfstring{INVARIANT}{INVARIANT}}
+{\footnotesize\ttfamily \label{_contrat_exception_8h_a08f80155f47e05681c2b9bb9c5f6fffe} 
+\#define INVARIANT(\begin{DoxyParamCaption}\item[{}]{f}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(f))\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_invariant_exception}{InvariantException}}(\_\_FILE\_\_,\_\_LINE\_\_,\ \#f);}
+
+\end{DoxyCode}
+\Hypertarget{_contrat_exception_8h_a52dddc2c198c58b53b201c313934e40c}\index{ContratException.h@{ContratException.h}!INVARIANTS@{INVARIANTS}}
+\index{INVARIANTS@{INVARIANTS}!ContratException.h@{ContratException.h}}
+\doxysubsubsection{\texorpdfstring{INVARIANTS}{INVARIANTS}}
+{\footnotesize\ttfamily \label{_contrat_exception_8h_a52dddc2c198c58b53b201c313934e40c} 
+\#define INVARIANTS(\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ verifieInvariant()}
+
+\end{DoxyCode}
+\Hypertarget{_contrat_exception_8h_a438b75c0c77a1ce8d1e914f9f04ea548}\index{ContratException.h@{ContratException.h}!POSTCONDITION@{POSTCONDITION}}
+\index{POSTCONDITION@{POSTCONDITION}!ContratException.h@{ContratException.h}}
+\doxysubsubsection{\texorpdfstring{POSTCONDITION}{POSTCONDITION}}
+{\footnotesize\ttfamily \label{_contrat_exception_8h_a438b75c0c77a1ce8d1e914f9f04ea548} 
+\#define POSTCONDITION(\begin{DoxyParamCaption}\item[{}]{f}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(f))\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_postcondition_exception}{PostconditionException}}(\_\_FILE\_\_,\ \_\_LINE\_\_,\ \#f);}
+
+\end{DoxyCode}
+\Hypertarget{_contrat_exception_8h_acb3361bd87fc697a57b7286a9998c106}\index{ContratException.h@{ContratException.h}!PRECONDITION@{PRECONDITION}}
+\index{PRECONDITION@{PRECONDITION}!ContratException.h@{ContratException.h}}
+\doxysubsubsection{\texorpdfstring{PRECONDITION}{PRECONDITION}}
+{\footnotesize\ttfamily \label{_contrat_exception_8h_acb3361bd87fc697a57b7286a9998c106} 
+\#define PRECONDITION(\begin{DoxyParamCaption}\item[{}]{f}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(f))\ \textcolor{keywordflow}{throw}\ \mbox{\hyperlink{class_precondition_exception}{PreconditionException}}(\_\_FILE\_\_,\ \_\_LINE\_\_,\ \#f);}
+
+\end{DoxyCode}

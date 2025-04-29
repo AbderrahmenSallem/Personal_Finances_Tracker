@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['getaccountid_0',['getAccountId',['../class_finance___management_1_1_account.html#a255e419ef811f8e3d008a0451dacd136',1,'Finance_Management::Account']]],
+  ['getaccountname_1',['getAccountName',['../class_finance___management_1_1_account.html#af9f13dfc431c0cf7cc37024c16ce0326',1,'Finance_Management::Account']]],
+  ['getaccounts_2',['getAccounts',['../class_user.html#a52208c4bf19546c30d5e143bb173eb1d',1,'User']]],
+  ['getaccounttype_3',['getAccountType',['../class_finance___management_1_1_account.html#aefbc740f1f352ea1cfe81af2aa0c6525',1,'Finance_Management::Account']]],
+  ['getamount_4',['getAmount',['../class_finance___management_1_1_transaction.html#afd18dd6a35d06b6b88ed87486ca5b3f5',1,'Finance_Management::Transaction']]],
+  ['getbalance_5',['getBalance',['../class_finance___management_1_1_account.html#a43f9a9ded8c0c5a110eb61530549defb',1,'Finance_Management::Account']]],
+  ['getcategory_6',['getCategory',['../class_finance___management_1_1_transaction.html#a3013b84430f1a194620c3018fb6236cf',1,'Finance_Management::Transaction']]],
+  ['getcurrency_7',['getCurrency',['../class_finance___management_1_1_account.html#aaeb9d956d5e2dc5d484d3682ce9fa114',1,'Finance_Management::Account']]],
+  ['getdate_8',['getDate',['../class_finance___management_1_1_transaction.html#a476604cb64cf56e567a42a53e02de9e6',1,'Finance_Management::Transaction']]],
+  ['getdescription_9',['getDescription',['../class_finance___management_1_1_transaction.html#a3c2a9da72fbca761ddaab4370917c994',1,'Finance_Management::Transaction']]],
+  ['getemail_10',['getEmail',['../class_user.html#aa61cb0fc84efcdcb213259f04672b95e',1,'User']]],
+  ['getpasswordhash_11',['getPasswordHash',['../class_user.html#a6521de0dca505f24a0fdfc6cca284386',1,'User']]],
+  ['gettransactionid_12',['getTransactionId',['../class_finance___management_1_1_transaction.html#a63f1636cf87193ddb1c89e81d006f96c',1,'Finance_Management::Transaction']]],
+  ['gettransactiontype_13',['getTransactionType',['../class_finance___management_1_1_transaction.html#a383834826a713f7fb75dabef03a5ef9a',1,'Finance_Management::Transaction']]],
+  ['getuserid_14',['getUserId',['../class_user.html#ac5a839e8c9b3bb68858d8c206a32885d',1,'User']]],
+  ['getusername_15',['getUserName',['../class_user.html#aaf9c19fc7f2dc45f34daa07296e2abb2',1,'User']]]
+];

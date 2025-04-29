@@ -22,4 +22,6 @@
 #include "Account.h"
 #include <memory>
 #include "FinanceManagementExceptions.h"
+#include <pybind11/pybind11.h>
+#include "C:\Users\HALF-\source\repos\test\vcpkg-master\vcpkg-master\downloads\tools\perl\5.40.0.1\c\include\python3.9\Python.h"
 #endif //PCH_H

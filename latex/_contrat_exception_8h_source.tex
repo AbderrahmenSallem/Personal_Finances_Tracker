@@ -1,0 +1,90 @@
+\doxysection{Contrat\+Exception.\+h}
+\hypertarget{_contrat_exception_8h_source}{}\label{_contrat_exception_8h_source}\index{FinanceManagementLibrary/ContratException.h@{FinanceManagementLibrary/ContratException.h}}
+\mbox{\hyperlink{_contrat_exception_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#ifndef\ CONTRATEXCEPTION\_H\_DEJA\_INCLU}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#define\ CONTRATEXCEPTION\_H\_DEJA\_INCLU}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{ContratException}}\ :\ \textcolor{keyword}{public}\ std::logic\_error}
+\DoxyCodeLine{00046\ \{}
+\DoxyCodeLine{00047\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{ContratException}}\ (\textcolor{keyword}{const}\ std::string\&\ p\_fichier,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ p\_ligne,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ p\_expression,\ \textcolor{keyword}{const}\ std::string\&\ p\_message);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{\string~ContratException}}\ ()\ \textcolor{keywordflow}{throw}\ ()\ \{\ \}}
+\DoxyCodeLine{00052\ \ \ ;}
+\DoxyCodeLine{00053\ \ \ std::string\ \mbox{\hyperlink{class_contrat_exception_a59c9ed58985dcdd70af4ee50b2937707}{reqTexteException}}\ ()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00056\ \ \ std::string\ m\_expression;}
+\DoxyCodeLine{00057\ \ \ std::string\ m\_fichier;}
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ m\_ligne;}
+\DoxyCodeLine{00059\ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_assertion_exception_a869330c0c416a0373c581a14f53ddde1}{AssertionException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{ContratException}}}
+\DoxyCodeLine{00067\ \{}
+\DoxyCodeLine{00068\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00069\ \ \ \mbox{\hyperlink{class_assertion_exception_a869330c0c416a0373c581a14f53ddde1}{AssertionException}}\ (\textcolor{keyword}{const}\ std::string\&\ p\_fichier,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ p\_ligne,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ p\_expression);}
+\DoxyCodeLine{00071\ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_precondition_exception_a176eed9bc17fc18d906e1c229ca17a58}{PreconditionException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{ContratException}}}
+\DoxyCodeLine{00079\ \{}
+\DoxyCodeLine{00080\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00081\ \ \ \mbox{\hyperlink{class_precondition_exception_a176eed9bc17fc18d906e1c229ca17a58}{PreconditionException}}\ (\textcolor{keyword}{const}\ std::string\&\ p\_fichier,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ p\_ligne,}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ p\_expression);}
+\DoxyCodeLine{00083\ \};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_postcondition_exception_a80acc8c062304f1f01ddb11243bac66c}{PostconditionException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{ContratException}}}
+\DoxyCodeLine{00090\ \{}
+\DoxyCodeLine{00091\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00092\ \ \ \mbox{\hyperlink{class_postcondition_exception_a80acc8c062304f1f01ddb11243bac66c}{PostconditionException}}\ (\textcolor{keyword}{const}\ std::string\&\ p\_fichier,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ p\_ligne,}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ p\_expression);}
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_invariant_exception_abb91388b6e3dcf4a47d16d748df16312}{InvariantException}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{ContratException}}}
+\DoxyCodeLine{00101\ \{}
+\DoxyCodeLine{00102\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00103\ \ \ \mbox{\hyperlink{class_invariant_exception_abb91388b6e3dcf4a47d16d748df16312}{InvariantException}}\ (\textcolor{keyword}{const}\ std::string\&\ p\_fichier,\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ p\_ligne,}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ p\_expression);}
+\DoxyCodeLine{00105\ \};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \textcolor{comment}{//\ -\/-\/-\/\ Définition\ des\ macros\ de\ contrôle\ de\ la\ théorie\ du\ contrat}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#if\ !defined(NDEBUG)}}
+\DoxyCodeLine{00111\ \textcolor{comment}{//\ -\/-\/-\/\ Mode\ debug}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ INVARIANTS()\ \(\backslash\)}}
+\DoxyCodeLine{00114\ \textcolor{preprocessor}{\ \ \ \ \ \ verifieInvariant()}}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#define\ ASSERTION(f)\ \ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00117\ \textcolor{preprocessor}{\ \ \ \ \ \ if\ (!(f))\ throw\ AssertionException(\_\_FILE\_\_,\_\_LINE\_\_,\ \#f);}}
+\DoxyCodeLine{00118\ \textcolor{preprocessor}{\#define\ PRECONDITION(f)\ \ \(\backslash\)}}
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\ \ \ \ \ \ if\ (!(f))\ throw\ PreconditionException(\_\_FILE\_\_,\ \_\_LINE\_\_,\ \#f);}}
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#define\ POSTCONDITION(f)\ \(\backslash\)}}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\ \ \ \ \ \ if\ (!(f))\ throw\ PostconditionException(\_\_FILE\_\_,\ \_\_LINE\_\_,\ \#f);}}
+\DoxyCodeLine{00122\ \textcolor{preprocessor}{\#define\ INVARIANT(f)\ \ \ \(\backslash\)}}
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\ \ \ \ \ \ if\ (!(f))\ throw\ InvariantException(\_\_FILE\_\_,\_\_LINE\_\_,\ \#f);}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{comment}{//\ -\/-\/-\/\ LE\ MODE\ RELEASE}}
+\DoxyCodeLine{00126\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#define\ PRECONDITION(f);}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#define\ POSTCONDITION(f);}}
+\DoxyCodeLine{00130\ \textcolor{preprocessor}{\#define\ INVARIANTS();}}
+\DoxyCodeLine{00131\ \textcolor{preprocessor}{\#define\ INVARIANT(f);}}
+\DoxyCodeLine{00132\ \textcolor{preprocessor}{\#define\ ASSERTION(f);}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ -\/-\/-\/\ if\ !defined\ (NDEBUG)}}
+\DoxyCodeLine{00135\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ -\/-\/-\/\ ifndef\ CONTRATEXCEPTION\_H\_DEJA\_INCLU}}
+\DoxyCodeLine{00136\ }
+
+\end{DoxyCode}

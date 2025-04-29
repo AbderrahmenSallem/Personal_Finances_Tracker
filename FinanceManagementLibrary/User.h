@@ -1,5 +1,5 @@
 /**
-* \file User.cpp
+* \file User.h
 * \brief File containing the implementation of the User class for managing user data and accounts.
 * \author Abderrahmen Sallem
 * \version 1.0
@@ -47,6 +47,7 @@ namespace Finance_Management
 		bool operator!=(const User& p_user) const;
 		const std::vector<std::unique_ptr<Account>>& getAccounts() const;
 		void verifieInvariant() const;
+		std::string userFormat() const;
 
 	private:
 		int m_userId;

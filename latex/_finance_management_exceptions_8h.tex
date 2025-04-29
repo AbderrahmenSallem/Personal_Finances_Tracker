@@ -1,0 +1,63 @@
+\doxysection{Finance\+Management\+Library/\+Finance\+Management\+Exceptions.h File Reference}
+\hypertarget{_finance_management_exceptions_8h}{}\label{_finance_management_exceptions_8h}\index{FinanceManagementLibrary/FinanceManagementExceptions.h@{FinanceManagementLibrary/FinanceManagementExceptions.h}}
+
+
+Hiérarchie de classe pour la gestion des erreurs dans le système de gestion financière.  
+
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_finance_management_exceptions}{Finance\+Management\+Exceptions}}
+\item 
+class \mbox{\hyperlink{class_account_not_found_exception}{Account\+Not\+Found\+Exception}}
+\item 
+class \mbox{\hyperlink{class_transaction_not_found_exception}{Transaction\+Not\+Found\+Exception}}
+\item 
+class \mbox{\hyperlink{class_account_already_exists_exception}{Account\+Already\+Exists\+Exception}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Hiérarchie de classe pour la gestion des erreurs dans le système de gestion financière. 
+
+/\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} ~\newline
+ contenant la déclaration de la classe \doxylink{class_finance_management_exceptions}{Finance\+Management\+Exceptions} et de ses héritiers ~\newline
+ 
+
+Ces classes constituent la hiérarchie pour la gestion des ~\newline
+ exceptions spécifiques au domaine de la gestion financière. ~\newline
+ Elles maintiennent les données nécessaires à la sauvegarde des ~\newline
+ renseignements de l\textquotesingle{}erreur. Cette classe et sa hiérarchie sont ~\newline
+ utilisées pour signaler des erreurs spécifiques au domaine. ~\newline
+
+
+En release, définir la constante NDEBUG pour désactiver les Macros ~\newline
+
+
+
+\begin{DoxyPre}  
+  Classes:  
+  std::runtime\_error             Classe de base des exceptions d'exécution  
+  \doxylink{class_finance_management_exceptions}{FinanceManagementExceptions}:   Classe de base des exceptions de gestion financière.  
+  \doxylink{class_account_not_found_exception}{AccountNotFoundException}:      Classe de gestion des erreurs de compte introuvable.  
+  \doxylink{class_transaction_not_found_exception}{TransactionNotFoundException}:  Classe de gestion des erreurs de transaction introuvable.  
+  \doxylink{class_account_already_exists_exception}{AccountAlreadyExistsException}: Classe de gestion des erreurs de compte déjà existant.  
+
+  Attributs:  
+       std::string  m\_message: Le message d'erreur décrivant le problème.  
+  \end{DoxyPre}
+ ~\newline
+
+
+\begin{DoxyNote}{Note}
+Cette hiérarchie de classe est inspirée des meilleures pratiques ~\newline
+ pour la gestion des exceptions dans les systèmes financiers. ~\newline
+
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Abderrahmen, Sallem 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+V1.\+0 révisée balises Doxygen C++ normes 
+\end{DoxyVersion}

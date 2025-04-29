@@ -7,6 +7,7 @@
 #include "pch.h"  
 #include "Account.h"  
 
+using namespace std;
 namespace Finance_Management {  
 
    /**  
@@ -26,8 +27,8 @@ namespace Finance_Management {
    * \post m_balance == p_balance  
    * \post m_currency == p_currency  
    */  
-   Account::Account(int p_accountId, const std::string& p_accountName, const std::string& p_accountType,  
-                    double p_balance, const std::string& p_currency)  
+   Account::Account(int p_accountId, const string& p_accountName, const string& p_accountType,  
+                    double p_balance, const string& p_currency)  
        : m_accountId(p_accountId), m_accountName(p_accountName), m_accountType(p_accountType),  
          m_balance(p_balance), m_currency(p_currency) {  
        PRECONDITION(p_accountId > 0);  
@@ -83,7 +84,7 @@ namespace Finance_Management {
    * \brief Gets the account name.  
    * \return The account name.  
    */  
-   const std::string& Account::getAccountName() const {  
+   const string& Account::getAccountName() const {  
        return m_accountName;  
    }  
 
@@ -91,7 +92,7 @@ namespace Finance_Management {
    * \brief Gets the account type.  
    * \return The account type.  
    */  
-   const std::string& Account::getAccountType() const {  
+   const string& Account::getAccountType() const {  
        return m_accountType;  
    }  
 
@@ -107,7 +108,7 @@ namespace Finance_Management {
    * \brief Gets the account currency.  
    * \return The account currency.  
    */  
-   const std::string& Account::getCurrency() const {  
+   const string& Account::getCurrency() const {  
        return m_currency;  
    }  
 
@@ -117,7 +118,7 @@ namespace Finance_Management {
    * \pre p_accountName is not empty.  
    * \post m_accountName == p_accountName.  
    */  
-   void Account::setAccountName(const std::string& p_accountName) {  
+   void Account::setAccountName(const string& p_accountName) {  
        PRECONDITION(!p_accountName.empty());  
        m_accountName = p_accountName;  
        POSTCONDITION(m_accountName == p_accountName);  
@@ -130,7 +131,7 @@ namespace Finance_Management {
    * \pre p_accountType is not empty.  
    * \post m_accountType == p_accountType.  
    */  
-   void Account::setAccountType(const std::string& p_accountType) {  
+   void Account::setAccountType(const string& p_accountType) {  
        PRECONDITION(!p_accountType.empty());  
        m_accountType = p_accountType;  
        POSTCONDITION(m_accountType == p_accountType);  
@@ -151,7 +152,7 @@ namespace Finance_Management {
    * \pre p_currency is not empty.  
    * \post m_currency == p_currency.  
    */  
-   void Account::setCurrency(const std::string& p_currency) {  
+   void Account::setCurrency(const string& p_currency) {  
        PRECONDITION(!p_currency.empty());  
        m_currency = p_currency;  
        POSTCONDITION(m_currency == p_currency);  
@@ -218,14 +219,29 @@ namespace Finance_Management {
    * \param[in] p_account The account to output.  
    * \return The output stream.  
    */  
-   std::ostream& operator<<(std::ostream& p_os, const Account& p_account) {  
+   ostream& operator<<(ostream& p_os, const Account& p_account) {  
        p_os << "Account ID: " << p_account.getAccountId() << "\n"  
             << "Account Name: " << p_account.getAccountName() << "\n"  
             << "Account Type: " << p_account.getAccountType() << "\n"  
             << "Balance: " << p_account.getBalance() << "\n"  
             << "Currency: " << p_account.getCurrency() << "\n";  
        return p_os;  
-   }  
+   }
+
+   /**
+   * \brief Formats the account information as a string.
+   * \return a string.
+   */
+   string Account::accountFormat() const 
+   {
+       ostringstream p_os;
+       p_os << "Account ID: " << m_accountId << "\n"
+           << "Account Name: " << m_accountName << "\n"
+           << "Account Type: " << m_accountType << "\n"
+           << "Balance: " << m_balance << "\n"
+           << "Currency: " << m_currency << "\n";
+       return p_os.str();
+   }
 
    /**  
    * \brief Verifies the class invariants.  

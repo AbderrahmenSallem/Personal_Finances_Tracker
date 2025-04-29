@@ -1,0 +1,48 @@
+\doxysection{Transaction.\+h}
+\hypertarget{_transaction_8h_source}{}\label{_transaction_8h_source}\index{FinanceManagementLibrary/Transaction.h@{FinanceManagementLibrary/Transaction.h}}
+\mbox{\hyperlink{_transaction_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \ \ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once\ \ }}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}pch.h"{}}\ \ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}\ \ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <sstream>}\ \ }
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }Finance\_Management\ \ }
+\DoxyCodeLine{00013\ \{\ \ \ \ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }Transaction\ \ }
+\DoxyCodeLine{00027\ \{\ \ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:\ \ }
+\DoxyCodeLine{00029\ Transaction(\textcolor{keywordtype}{int}\ p\_transactionId,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classutil_1_1_date}{util::Date}}\&\ p\_date,\ \textcolor{keyword}{const}\ std::string\&\ p\_description,\ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{double}\ p\_amount,\ \textcolor{keyword}{const}\ std::string\&\ p\_transactionType,\ \textcolor{keyword}{const}\ std::string\&\ p\_category);\ \ }
+\DoxyCodeLine{00031\ Transaction(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction);\ \ }
+\DoxyCodeLine{00032\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a89306cbb3e4dc55620c09764a91e9e89}{\string~Transaction}}();\ \ }
+\DoxyCodeLine{00033\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a63f1636cf87193ddb1c89e81d006f96c}{getTransactionId}}()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classutil_1_1_date}{util::Date}}\&\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a476604cb64cf56e567a42a53e02de9e6}{getDate}}()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a3c2a9da72fbca761ddaab4370917c994}{getDescription}}()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_afd18dd6a35d06b6b88ed87486ca5b3f5}{getAmount}}()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a383834826a713f7fb75dabef03a5ef9a}{getTransactionType}}()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a3013b84430f1a194620c3018fb6236cf}{getCategory}}()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00039\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_ace3ea5501e8ffa75b59d165c9d92288f}{setDescription}}(\textcolor{keyword}{const}\ std::string\&\ p\_description);\ \ }
+\DoxyCodeLine{00040\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a5d7f1b9b74bcca1105b253516804203b}{setAmount}}(\textcolor{keywordtype}{double}\ p\_amount);\ \ }
+\DoxyCodeLine{00041\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_af4a3f8d3792a5e61bd645dcf13e50f26}{setTransactionType}}(\textcolor{keyword}{const}\ std::string\&\ p\_transactionType);\ \ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_aa3375bfaed786f8b585222aeac887837}{setCategory}}(\textcolor{keyword}{const}\ std::string\&\ p\_category);\ \ }
+\DoxyCodeLine{00043\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_acfe92e2e8437ae1501bdd5b2fd39cbec}{operator==}}(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction)\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a1417c5b107369ae03f20172b72b671b1}{operator<}}(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction)\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00045\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a834f6873e7ef8b3fafcab31653296a63}{operator>}}(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction)\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00046\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a94d77431e77b8605e85582ba701f7c92}{operator<=}}(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction)\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00047\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_a9ca62f20ae85c692433dfda202b03284}{operator>=}}(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction)\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_transaction_ad4f3b88897ebd67249a0ab43b579a968}{operator!=}}(\textcolor{keyword}{const}\ Transaction\&\ p\_transaction)\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ p\_os,\ \textcolor{keyword}{const}\ Transaction\&\ p\_transaction);\ \ }
+\DoxyCodeLine{00050\ \textcolor{keyword}{private}:\ \ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{int}\ m\_transactionId;\ \ }
+\DoxyCodeLine{00052\ \mbox{\hyperlink{classutil_1_1_date}{util::Date}}\ m\_date;\ \ }
+\DoxyCodeLine{00053\ std::string\ m\_description;\ \ }
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{double}\ m\_amount;\ \ }
+\DoxyCodeLine{00055\ std::string\ m\_transactionType;\ \ }
+\DoxyCodeLine{00056\ std::string\ m\_category;\ \ }
+\DoxyCodeLine{00057\ \textcolor{keywordtype}{void}\ verifieInvariant()\ \textcolor{keyword}{const};\ \ }
+\DoxyCodeLine{00058\ \};\ \ }
+\DoxyCodeLine{00059\ \}\ \textcolor{comment}{//\ namespace\ Finance\_Management}}
+
+\end{DoxyCode}

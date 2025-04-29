@@ -17,7 +17,8 @@ namespace util
   {
     auto maintenant = std::chrono::system_clock::now ();
     std::time_t tempsSysteme = std::chrono::system_clock::to_time_t (maintenant);
-    std::tm* infoTemps = std::localtime (&tempsSysteme);
+    std::tm* infoTemps = new tm;
+    localtime_s(infoTemps ,&tempsSysteme);
 
     m_annee = infoTemps->tm_year + 1900;
     m_mois = infoTemps->tm_mon + 1;

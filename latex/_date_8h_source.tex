@@ -1,0 +1,55 @@
+\doxysection{Date.\+h}
+\hypertarget{_date_8h_source}{}\label{_date_8h_source}\index{FinanceManagementLibrary/Date.h@{FinanceManagementLibrary/Date.h}}
+\mbox{\hyperlink{_date_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#ifndef\ DATE\_H\_}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#define\ DATE\_H\_}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }util}
+\DoxyCodeLine{00013\ \{}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}(\textcolor{keywordtype}{int}\ p\_jour,\ \textcolor{keywordtype}{int}\ p\_mois,\ \textcolor{keywordtype}{int}\ p\_annee);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classutil_1_1_date_a7547e00e413145092c9b6b24f14959d6}{asgDate}}(\textcolor{keywordtype}{int}\ p\_jour,\ \textcolor{keywordtype}{int}\ p\_mois,\ \textcolor{keywordtype}{int}\ p\_annee);}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classutil_1_1_date_a8f404084c4a6ba8252c1afed11ac0330}{ajouteNbJour}}(\textcolor{keywordtype}{int}\ p\_nbjour);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classutil_1_1_date_a0f16b8e6a2530c2454136c6f46cfc105}{reqJour}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classutil_1_1_date_a63072bff8a5122b9ab11fe470927e7ca}{reqMois}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classutil_1_1_date_a1807d80266630099b0daf45c642c2fb1}{reqAnnee}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classutil_1_1_date_a86efd5dd1a920ce49d310168086d454d}{reqJourDeAnnee}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ std::string\ \mbox{\hyperlink{classutil_1_1_date_ad92d1e9c4d570c5f31a8e06cf2e1ae8c}{reqDateFormatee}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classutil_1_1_date_a8114f8e40cee24e1d7a58b910e8f4637}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}\&\ p\_date)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classutil_1_1_date_aefcf8a7520711f783fb0241d460480c5}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}\&\ p\_date)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classutil_1_1_date_af12f2c545070b5e2b397be5379c5c3fd}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}\&\ p\_date)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classutil_1_1_date_ab915f5fc90a1a167ba23bc10f2d82a33}{estBissextile}}(\textcolor{keywordtype}{int}\ p\_annee);}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classutil_1_1_date_a71bac78eaab11b8a6c4e9c239665593f}{validerDate}}(\textcolor{keywordtype}{int}\ p\_jour,\ \textcolor{keywordtype}{int}\ p\_mois,\ \textcolor{keywordtype}{int}\ p\_annee);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ p\_os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}{Date}}\&\ p\_date);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00054\ \ \ \ \ std::string\ reqNomJourSemaine()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ \ \ \ \ std::string\ reqNomMois()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ joursDansLeMois(\textcolor{keywordtype}{int}\ p\_annee,\ \textcolor{keywordtype}{int}\ p\_mois)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ nbJoursDepuisLaDateDeReference()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ verifieInvariant()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_jour;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_mois;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_annee;}
+\DoxyCodeLine{00062\ \};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \}\ \textcolor{comment}{//\ namespace\ util}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ DATE\_H\_\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00067\ }
+
+\end{DoxyCode}

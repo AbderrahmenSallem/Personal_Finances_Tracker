@@ -1,0 +1,44 @@
+\doxysection{Account.\+h}
+\hypertarget{_account_8h_source}{}\label{_account_8h_source}\index{FinanceManagementLibrary/Account.h@{FinanceManagementLibrary/Account.h}}
+\mbox{\hyperlink{_account_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}pch.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Finance\_Management}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }Account}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ Account(\textcolor{keywordtype}{int}\ p\_accountId,\ \textcolor{keyword}{const}\ std::string\&\ p\_accountName,\ \textcolor{keyword}{const}\ std::string\&\ p\_accountType,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ p\_balance,\ \textcolor{keyword}{const}\ std::string\&\ p\_currency);}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ Account(\textcolor{keyword}{const}\ Account\&\ p\_account);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_finance___management_1_1_account_a430f2cbf9e3981f4c725855a7769ee70}{\string~Account}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_finance___management_1_1_account_a255e419ef811f8e3d008a0451dacd136}{getAccountId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_finance___management_1_1_account_af9f13dfc431c0cf7cc37024c16ce0326}{getAccountName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_finance___management_1_1_account_aefbc740f1f352ea1cfe81af2aa0c6525}{getAccountType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_finance___management_1_1_account_a43f9a9ded8c0c5a110eb61530549defb}{getBalance}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_finance___management_1_1_account_aaeb9d956d5e2dc5d484d3682ce9fa114}{getCurrency}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_account_ae7ba19c665bedb2fba2e851f3b13a4c6}{setAccountName}}(\textcolor{keyword}{const}\ std::string\&\ p\_accountName);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_account_aa19b518059f59df8acc788870d94f091}{setAccountType}}(\textcolor{keyword}{const}\ std::string\&\ p\_accountType);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_account_afe9cfa620a6bc1c8f12c0bbb5e4ad6a0}{setBalance}}(\textcolor{keywordtype}{double}\ p\_balance);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_account_a83659365c93d092008cb02e6500dc5a0}{setCurrency}}(\textcolor{keyword}{const}\ std::string\&\ p\_currency);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_account_ae2207335ce822cf824db8ac436981442}{operator==}}(\textcolor{keyword}{const}\ Account\&\ p\_account)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_account_abf6bd16b432e081994ff0a5c14a48f4b}{operator<}}(\textcolor{keyword}{const}\ Account\&\ p\_account)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_account_afc95d03579aedfa1bcc5bdde4b5458b5}{operator>}}(\textcolor{keyword}{const}\ Account\&\ p\_account)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_account_a895105d6ccbd331a80bcba137b8d0dcf}{operator<=}}(\textcolor{keyword}{const}\ Account\&\ p\_account)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_account_ace58df89117aa403610f18bc626aed3e}{operator>=}}(\textcolor{keyword}{const}\ Account\&\ p\_account)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_finance___management_1_1_account_a416c0de8ffc4d8362be0e9ea89f4711d}{operator!=}}(\textcolor{keyword}{const}\ Account\&\ p\_account)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ std::ostream\&\ operator<<(std::ostream\&\ p\_os,\ \textcolor{keyword}{const}\ Account\&\ p\_account);}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_finance___management_1_1_account_a05b4cb09586e163ff2bc367edbb15636}{accountFormat}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_finance___management_1_1_account_a40cad07199a9076700112f7c54aea55b}{verifieInvariant}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_accountId;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ std::string\ m\_accountName;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ std::string\ m\_accountType;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ m\_balance;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::string\ m\_currency;}
+\DoxyCodeLine{00055\ \ \ \ \ \};}
+\DoxyCodeLine{00056\ \}\ \textcolor{comment}{//\ namespace\ Finance\_Management}}
+
+\end{DoxyCode}

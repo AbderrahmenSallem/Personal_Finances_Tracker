@@ -1,0 +1,73 @@
+\doxysection{Contrat\+Exception Class Reference}
+\hypertarget{class_contrat_exception}{}\label{class_contrat_exception}\index{ContratException@{ContratException}}
+
+
+Classe de base des exceptions de contrat.  
+
+
+
+
+{\ttfamily \#include $<$Contrat\+Exception.\+h$>$}
+
+Inheritance diagram for Contrat\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.800000cm]{class_contrat_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{Contrat\+Exception}} (const std\+::string \&p\+\_\+fichier, unsigned int p\+\_\+ligne, const std\+::string \&p\+\_\+expression, const std\+::string \&p\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe de base \doxylink{class_contrat_exception}{Contrat\+Exception}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_contrat_exception_a59c9ed58985dcdd70af4ee50b2937707}{req\+Texte\+Exception}} () const
+\begin{DoxyCompactList}\small\item\em Construit le texte complet relié à l\textquotesingle{}exception de contrat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de base des exceptions de contrat. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}\index{ContratException@{ContratException}!ContratException@{ContratException}}
+\index{ContratException@{ContratException}!ContratException@{ContratException}}
+\doxysubsubsection{\texorpdfstring{ContratException()}{ContratException()}}
+{\footnotesize\ttfamily \label{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1} 
+Contrat\+Exception\+::\+Contrat\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+fichier}{, }\item[{unsigned int}]{p\+\_\+ligne}{, }\item[{const std\+::string \&}]{p\+\_\+expression}{, }\item[{const std\+::string \&}]{p\+\_\+message}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe de base \doxylink{class_contrat_exception}{Contrat\+Exception}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+fichier} & chaîne de caractères représentant le fichier source dans lequel a eu lieu l\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+ligne} & un entier représentant la ligne où a eu lieu l\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+message} & Message décrivant l\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+expression} & Test logique qui a échoué \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_contrat_exception_a59c9ed58985dcdd70af4ee50b2937707}\index{ContratException@{ContratException}!reqTexteException@{reqTexteException}}
+\index{reqTexteException@{reqTexteException}!ContratException@{ContratException}}
+\doxysubsubsection{\texorpdfstring{reqTexteException()}{reqTexteException()}}
+{\footnotesize\ttfamily \label{class_contrat_exception_a59c9ed58985dcdd70af4ee50b2937707} 
+std\+::string Contrat\+Exception\+::req\+Texte\+Exception (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Construit le texte complet relié à l\textquotesingle{}exception de contrat. 
+
+\begin{DoxyReturn}{Returns}
+une chaîne de caractères correspondant à l\textquotesingle{}exception 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_contrat_exception_8h}{Contrat\+Exception.\+h}}\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_contrat_exception_8cpp}{Contrat\+Exception.\+cpp}}\end{DoxyCompactItemize}

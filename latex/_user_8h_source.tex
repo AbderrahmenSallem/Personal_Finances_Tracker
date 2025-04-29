@@ -1,0 +1,46 @@
+\doxysection{User.\+h}
+\hypertarget{_user_8h_source}{}\label{_user_8h_source}\index{FinanceManagementLibrary/User.h@{FinanceManagementLibrary/User.h}}
+\mbox{\hyperlink{_user_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}pch.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_account_8h}{Account.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }Finance\_Management}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{class\ }User}
+\DoxyCodeLine{00027\ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ User(\textcolor{keywordtype}{int}\ p\_userId,\ \textcolor{keyword}{const}\ std::string\&\ p\_userName,\ \textcolor{keyword}{const}\ std::string\&\ p\_passwordHash,\ \textcolor{keyword}{const}\ std::string\&\ p\_email);}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ User(\textcolor{keyword}{const}\ User\&\ p\_user);}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \string~User();}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_user_ac5a839e8c9b3bb68858d8c206a32885d}{getUserId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_user_aaf9c19fc7f2dc45f34daa07296e2abb2}{getUserName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_user_a6521de0dca505f24a0fdfc6cca284386}{getPasswordHash}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_user_aa61cb0fc84efcdcb213259f04672b95e}{getEmail}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_a441ab34126f43c9485a6782cf596904b}{setUserName}}(\textcolor{keyword}{const}\ std::string\&\ p\_userName);}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_accf2c249f2b3476851032ec2430b7123}{setPasswordHash}}(\textcolor{keyword}{const}\ std::string\&\ p\_passwordHash);}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_affeda79ea5f10dde4bbe4c6bebd5a4bd}{setEmail}}(\textcolor{keyword}{const}\ std::string\&\ p\_email);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_a9d7a7b9e57297a240231e43ad0a8b16b}{addAccount}}(\textcolor{keyword}{const}\ Account\&\ p\_account);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_a502c901c9664b19c8acb8824982736d5}{removeAccount}}(\textcolor{keywordtype}{int}\ p\_accountId);}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_ad627575bdd85b2b0f2b638afc807ec01}{accountPresent}}(\textcolor{keywordtype}{int}\ p\_accountId);}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_a779c62525eedea56a4ef3dfca7ef8f00}{operator==}}(\textcolor{keyword}{const}\ User\&\ p\_user)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_a51b6ba80c1b282f22c2c61546694338d}{operator<}}(\textcolor{keyword}{const}\ User\&\ p\_user)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_ac93b1e0220a738dc476964f31c6acd12}{operator>}}(\textcolor{keyword}{const}\ User\&\ p\_user)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_abaf148f48f1a95a14106b40842ed00a1}{operator<=}}(\textcolor{keyword}{const}\ User\&\ p\_user)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_aaf623581f2241f6ec1490be940d2ad72}{operator>=}}(\textcolor{keyword}{const}\ User\&\ p\_user)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_user_ac0185b8dd2597d6b35fdc7976d09608f}{operator!=}}(\textcolor{keyword}{const}\ User\&\ p\_user)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::unique\_ptr<Account>>\&\ \mbox{\hyperlink{class_user_a52208c4bf19546c30d5e143bb173eb1d}{getAccounts}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_user_a90863559ca701766f205419aa14d5ca5}{verifieInvariant}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_user_a90a1da6e32bba77887950acc166ad1e9}{userFormat}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_userId;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::string\ m\_userName;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ std::string\ m\_passwordHash;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::string\ m\_email;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<Account>>\ m\_accounts;}
+\DoxyCodeLine{00058\ \ \ \ \ \};}
+\DoxyCodeLine{00059\ \}\ \textcolor{comment}{//\ namespace\ Finance\_Management}}
+
+\end{DoxyCode}

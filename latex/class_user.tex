@@ -1,0 +1,436 @@
+\doxysection{User Class Reference}
+\hypertarget{class_user}{}\label{class_user}\index{User@{User}}
+
+
+This class is used for managing user data and accounts.  
+
+
+
+
+{\ttfamily \#include $<$User.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_user_a71fdd140aab4ed2c3a2a01035246a860}\label{class_user_a71fdd140aab4ed2c3a2a01035246a860} 
+{\bfseries User} (int p\+\_\+user\+Id, const std\+::string \&p\+\_\+user\+Name, const std\+::string \&p\+\_\+password\+Hash, const std\+::string \&p\+\_\+email)
+\item 
+\mbox{\hyperlink{class_user_ac849b4cc2f224ea9f50f436e2a841b56}{User}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{\texorpdfstring{$\sim$}{\string~}\+User}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_user_ac5a839e8c9b3bb68858d8c206a32885d}{get\+User\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the user ID. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_user_aaf9c19fc7f2dc45f34daa07296e2abb2}{get\+User\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the user name. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_user_a6521de0dca505f24a0fdfc6cca284386}{get\+Password\+Hash}} () const
+\begin{DoxyCompactList}\small\item\em Gets the password hash. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_user_aa61cb0fc84efcdcb213259f04672b95e}{get\+Email}} () const
+\begin{DoxyCompactList}\small\item\em Gets the email address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a441ab34126f43c9485a6782cf596904b}{set\+User\+Name}} (const std\+::string \&p\+\_\+user\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the user name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_accf2c249f2b3476851032ec2430b7123}{set\+Password\+Hash}} (const std\+::string \&p\+\_\+password\+Hash)
+\begin{DoxyCompactList}\small\item\em Sets the password hash. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_affeda79ea5f10dde4bbe4c6bebd5a4bd}{set\+Email}} (const std\+::string \&p\+\_\+email)
+\begin{DoxyCompactList}\small\item\em Sets the email address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a9d7a7b9e57297a240231e43ad0a8b16b}{add\+Account}} (const Account \&p\+\_\+account)
+\begin{DoxyCompactList}\small\item\em Adds an account to the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a502c901c9664b19c8acb8824982736d5}{remove\+Account}} (int p\+\_\+account\+Id)
+\begin{DoxyCompactList}\small\item\em Removes an account from the user. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_ad627575bdd85b2b0f2b638afc807ec01}{account\+Present}} (int p\+\_\+account\+Id)
+\begin{DoxyCompactList}\small\item\em Checks if an account is present. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_a779c62525eedea56a4ef3dfca7ef8f00}{operator==}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user) const
+\begin{DoxyCompactList}\small\item\em Equality operator for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_a51b6ba80c1b282f22c2c61546694338d}{operator$<$}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user) const
+\begin{DoxyCompactList}\small\item\em Less-\/than operator for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_ac93b1e0220a738dc476964f31c6acd12}{operator$>$}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user) const
+\begin{DoxyCompactList}\small\item\em Greater-\/than operator for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_abaf148f48f1a95a14106b40842ed00a1}{operator$<$=}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user) const
+\begin{DoxyCompactList}\small\item\em Less-\/than-\/or-\/equal-\/to operator for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_aaf623581f2241f6ec1490be940d2ad72}{operator$>$=}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user) const
+\begin{DoxyCompactList}\small\item\em Greater-\/than-\/or-\/equal-\/to operator for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_ac0185b8dd2597d6b35fdc7976d09608f}{operator!=}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user) const
+\begin{DoxyCompactList}\small\item\em Inequality operator for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ Account $>$ $>$ \& \mbox{\hyperlink{class_user_a52208c4bf19546c30d5e143bb173eb1d}{get\+Accounts}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of accounts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_a90863559ca701766f205419aa14d5ca5}{verifie\+Invariant}} () const
+\begin{DoxyCompactList}\small\item\em Verifies the class invariants. \end{DoxyCompactList}\item 
+\Hypertarget{class_user_a90a1da6e32bba77887950acc166ad1e9}\label{class_user_a90a1da6e32bba77887950acc166ad1e9} 
+std\+::string {\bfseries user\+Format} () const
+\begin{DoxyCompactList}\small\item\em Formats the user information as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for managing user data and accounts. 
+
+~\newline
+ \begin{DoxyVerb}  The class maintains user information in a consistent state.  
+  It provides methods to access and modify user details such as  
+  username, password hash, and email. Additionally, it allows  
+  managing associated accounts by adding, removing, and verifying  
+  the presence of accounts.  
+\end{DoxyVerb}
+
+
+\begin{DoxyInvariant}{Invariant}
+The class ensures that the user data remains valid and consistent. ~\newline
+ The validity of the user data can be verified using the ~\newline
+ \doxylink{class_user_a90863559ca701766f205419aa14d5ca5}{verifie\+Invariant()} method. 
+\end{DoxyInvariant}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_user_ac849b4cc2f224ea9f50f436e2a841b56}\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}}
+{\footnotesize\ttfamily \label{class_user_ac849b4cc2f224ea9f50f436e2a841b56} 
+User\+::\+User (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & \doxylink{class_user}{User} object to copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+user\+Id == p\+\_\+user.\+m\+\_\+user\+Id 
+
+m\+\_\+user\+Name == p\+\_\+user.\+m\+\_\+user\+Name 
+
+m\+\_\+password\+Hash == p\+\_\+user.\+m\+\_\+password\+Hash 
+
+m\+\_\+email == p\+\_\+user.\+m\+\_\+email 
+
+m\+\_\+accounts == p\+\_\+user.\+m\+\_\+accounts 
+\end{DoxyPostcond}
+\Hypertarget{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}\index{User@{User}!````~User@{\texorpdfstring{$\sim$}{\string~}User}}
+\index{````~User@{\texorpdfstring{$\sim$}{\string~}User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}User()}{\string~User()}}
+{\footnotesize\ttfamily \label{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2} 
+User\+::\texorpdfstring{$\sim$}{\string~}\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_user}{User} class. 
+
+Cleans up any resources used by the \doxylink{class_user}{User} object. \begin{DoxyPostcond}{Postcondition}
+All dynamically allocated memory is released.
+\end{DoxyPostcond}
+Destructor for the \doxylink{class_user}{User} class.
+
+Cleans up any resources used by the \doxylink{class_user}{User} object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_user_ad627575bdd85b2b0f2b638afc807ec01}\index{User@{User}!accountPresent@{accountPresent}}
+\index{accountPresent@{accountPresent}!User@{User}}
+\doxysubsubsection{\texorpdfstring{accountPresent()}{accountPresent()}}
+{\footnotesize\ttfamily \label{class_user_ad627575bdd85b2b0f2b638afc807ec01} 
+bool User\+::account\+Present (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+account\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Checks if an account is present. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account\+Id} & The ID of the account to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the account is present, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a9d7a7b9e57297a240231e43ad0a8b16b}\index{User@{User}!addAccount@{addAccount}}
+\index{addAccount@{addAccount}!User@{User}}
+\doxysubsubsection{\texorpdfstring{addAccount()}{addAccount()}}
+{\footnotesize\ttfamily \label{class_user_a9d7a7b9e57297a240231e43ad0a8b16b} 
+void User\+::add\+Account (\begin{DoxyParamCaption}\item[{const Account \&}]{p\+\_\+account}{}\end{DoxyParamCaption})}
+
+
+
+Adds an account to the user. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to add. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_account_already_exists_exception}{Account\+Already\+Exists\+Exception}} & if the account already exists. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_user_a52208c4bf19546c30d5e143bb173eb1d}\index{User@{User}!getAccounts@{getAccounts}}
+\index{getAccounts@{getAccounts}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getAccounts()}{getAccounts()}}
+{\footnotesize\ttfamily \label{class_user_a52208c4bf19546c30d5e143bb173eb1d} 
+const vector$<$ unique\+\_\+ptr$<$ Account $>$ $>$ \& User\+::get\+Accounts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of accounts. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the vector of accounts. 
+\end{DoxyReturn}
+\Hypertarget{class_user_aa61cb0fc84efcdcb213259f04672b95e}\index{User@{User}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getEmail()}{getEmail()}}
+{\footnotesize\ttfamily \label{class_user_aa61cb0fc84efcdcb213259f04672b95e} 
+const string \& User\+::get\+Email (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the email address. 
+
+\begin{DoxyReturn}{Returns}
+The email address. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a6521de0dca505f24a0fdfc6cca284386}\index{User@{User}!getPasswordHash@{getPasswordHash}}
+\index{getPasswordHash@{getPasswordHash}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getPasswordHash()}{getPasswordHash()}}
+{\footnotesize\ttfamily \label{class_user_a6521de0dca505f24a0fdfc6cca284386} 
+const string \& User\+::get\+Password\+Hash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the password hash. 
+
+\begin{DoxyReturn}{Returns}
+The password hash. 
+\end{DoxyReturn}
+\Hypertarget{class_user_ac5a839e8c9b3bb68858d8c206a32885d}\index{User@{User}!getUserId@{getUserId}}
+\index{getUserId@{getUserId}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getUserId()}{getUserId()}}
+{\footnotesize\ttfamily \label{class_user_ac5a839e8c9b3bb68858d8c206a32885d} 
+int User\+::get\+User\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the user ID. 
+
+\begin{DoxyReturn}{Returns}
+The user ID. 
+\end{DoxyReturn}
+\Hypertarget{class_user_aaf9c19fc7f2dc45f34daa07296e2abb2}\index{User@{User}!getUserName@{getUserName}}
+\index{getUserName@{getUserName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{getUserName()}{getUserName()}}
+{\footnotesize\ttfamily \label{class_user_aaf9c19fc7f2dc45f34daa07296e2abb2} 
+const string \& User\+::get\+User\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the user name. 
+
+\begin{DoxyReturn}{Returns}
+The user name. 
+\end{DoxyReturn}
+\Hypertarget{class_user_ac0185b8dd2597d6b35fdc7976d09608f}\index{User@{User}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_user_ac0185b8dd2597d6b35fdc7976d09608f} 
+bool User\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption}) const}
+
+
+
+Inequality operator for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & The user to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the users are not equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a51b6ba80c1b282f22c2c61546694338d}\index{User@{User}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_user_a51b6ba80c1b282f22c2c61546694338d} 
+bool User\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption}) const}
+
+
+
+Less-\/than operator for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & The user to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this user is less than the other user, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_abaf148f48f1a95a14106b40842ed00a1}\index{User@{User}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{class_user_abaf148f48f1a95a14106b40842ed00a1} 
+bool User\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption}) const}
+
+
+
+Less-\/than-\/or-\/equal-\/to operator for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & The user to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this user is less than or equal to the other user, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a779c62525eedea56a4ef3dfca7ef8f00}\index{User@{User}!operator==@{operator==}}
+\index{operator==@{operator==}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_user_a779c62525eedea56a4ef3dfca7ef8f00} 
+bool User\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & The user to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the users are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_ac93b1e0220a738dc476964f31c6acd12}\index{User@{User}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{class_user_ac93b1e0220a738dc476964f31c6acd12} 
+bool User\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption}) const}
+
+
+
+Greater-\/than operator for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & The user to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this user is greater than the other user, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_aaf623581f2241f6ec1490be940d2ad72}\index{User@{User}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!User@{User}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{class_user_aaf623581f2241f6ec1490be940d2ad72} 
+bool User\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption}) const}
+
+
+
+Greater-\/than-\/or-\/equal-\/to operator for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user} & The user to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this user is greater than or equal to the other user, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_user_a502c901c9664b19c8acb8824982736d5}\index{User@{User}!removeAccount@{removeAccount}}
+\index{removeAccount@{removeAccount}!User@{User}}
+\doxysubsubsection{\texorpdfstring{removeAccount()}{removeAccount()}}
+{\footnotesize\ttfamily \label{class_user_a502c901c9664b19c8acb8824982736d5} 
+void User\+::remove\+Account (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+account\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Removes an account from the user. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account\+Id} & The ID of the account to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_account_not_found_exception}{Account\+Not\+Found\+Exception}} & if the account does not exist. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_user_affeda79ea5f10dde4bbe4c6bebd5a4bd}\index{User@{User}!setEmail@{setEmail}}
+\index{setEmail@{setEmail}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setEmail()}{setEmail()}}
+{\footnotesize\ttfamily \label{class_user_affeda79ea5f10dde4bbe4c6bebd5a4bd} 
+void User\+::set\+Email (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+email}{}\end{DoxyParamCaption})}
+
+
+
+Sets the email address. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+email} & The new email address. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+email is not empty. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+email == p\+\_\+email. 
+\end{DoxyPostcond}
+\Hypertarget{class_user_accf2c249f2b3476851032ec2430b7123}\index{User@{User}!setPasswordHash@{setPasswordHash}}
+\index{setPasswordHash@{setPasswordHash}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setPasswordHash()}{setPasswordHash()}}
+{\footnotesize\ttfamily \label{class_user_accf2c249f2b3476851032ec2430b7123} 
+void User\+::set\+Password\+Hash (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+password\+Hash}{}\end{DoxyParamCaption})}
+
+
+
+Sets the password hash. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+password\+Hash} & The new password hash. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+password\+Hash is not empty. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+password\+Hash == p\+\_\+password\+Hash. 
+\end{DoxyPostcond}
+\Hypertarget{class_user_a441ab34126f43c9485a6782cf596904b}\index{User@{User}!setUserName@{setUserName}}
+\index{setUserName@{setUserName}!User@{User}}
+\doxysubsubsection{\texorpdfstring{setUserName()}{setUserName()}}
+{\footnotesize\ttfamily \label{class_user_a441ab34126f43c9485a6782cf596904b} 
+void User\+::set\+User\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+user\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Sets the user name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user\+Name} & The new user name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+user\+Name is not empty. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+user\+Name == p\+\_\+user\+Name. 
+\end{DoxyPostcond}
+\Hypertarget{class_user_a90863559ca701766f205419aa14d5ca5}\index{User@{User}!verifieInvariant@{verifieInvariant}}
+\index{verifieInvariant@{verifieInvariant}!User@{User}}
+\doxysubsubsection{\texorpdfstring{verifieInvariant()}{verifieInvariant()}}
+{\footnotesize\ttfamily \label{class_user_a90863559ca701766f205419aa14d5ca5} 
+void User\+::verifie\+Invariant (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Verifies the class invariants. 
+
+This method can be used to ensure that the class invariants are maintained. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_user_8h}{User.\+h}}\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_user_8cpp}{User.\+cpp}}\end{DoxyCompactItemize}

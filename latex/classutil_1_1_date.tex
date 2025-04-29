@@ -1,0 +1,332 @@
+\doxysection{util\+::Date Class Reference}
+\hypertarget{classutil_1_1_date}{}\label{classutil_1_1_date}\index{util::Date@{util::Date}}
+
+
+Cette classe sert au maintien et à la manipulation des dates.  
+
+
+
+
+{\ttfamily \#include $<$Date.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54}\label{classutil_1_1_date_a03f7ca00aa80f113bc7c0ebfbd769f54} 
+{\bfseries Date} ()
+\begin{DoxyCompactList}\small\item\em constructeur par défaut ~\newline
+La date prise par défaut est la date du système \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classutil_1_1_date_a47bf553a8ca3322b2a34c3d28e459480}{Date}} (int p\+\_\+jour, int p\+\_\+mois, int p\+\_\+annee)
+\begin{DoxyCompactList}\small\item\em constructeur avec paramètres On construit un objet \doxylink{classutil_1_1_date}{Date} à partir de valeurs passées en paramètres. Les attributs sont assignés seulement si la date est considérée comme valide. Autrement, une erreur de précondition est générée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classutil_1_1_date_a7547e00e413145092c9b6b24f14959d6}{asg\+Date}} (int p\+\_\+jour, int p\+\_\+mois, int p\+\_\+annee)
+\begin{DoxyCompactList}\small\item\em Assigne une date à l\textquotesingle{}objet courant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classutil_1_1_date_a8f404084c4a6ba8252c1afed11ac0330}{ajoute\+Nb\+Jour}} (int p\+\_\+nbjour)
+\begin{DoxyCompactList}\small\item\em Ajoute ou retire un certain nombre de jours à la date courante. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classutil_1_1_date_a0f16b8e6a2530c2454136c6f46cfc105}{req\+Jour}} () const
+\begin{DoxyCompactList}\small\item\em retourne le jour de la date \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classutil_1_1_date_a63072bff8a5122b9ab11fe470927e7ca}{req\+Mois}} () const
+\begin{DoxyCompactList}\small\item\em retourne le mois de la date \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classutil_1_1_date_a1807d80266630099b0daf45c642c2fb1}{req\+Annee}} () const
+\begin{DoxyCompactList}\small\item\em retourne l\textquotesingle{}année de la date \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classutil_1_1_date_a86efd5dd1a920ce49d310168086d454d}{req\+Jour\+De\+Annee}} () const
+\begin{DoxyCompactList}\small\item\em retourne le ième jour de l\textquotesingle{}année correspondant au jour de la date \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classutil_1_1_date_ad92d1e9c4d570c5f31a8e06cf2e1ae8c}{req\+Date\+Formatee}} () const
+\begin{DoxyCompactList}\small\item\em retourne une date formatée dans une chaîne de caracères (string) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classutil_1_1_date_a8114f8e40cee24e1d7a58b910e8f4637}{operator==}} (const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&p\+\_\+date) const
+\begin{DoxyCompactList}\small\item\em surcharge de l\textquotesingle{}opérateur == \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classutil_1_1_date_aefcf8a7520711f783fb0241d460480c5}{operator$<$}} (const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&p\+\_\+date) const
+\begin{DoxyCompactList}\small\item\em surcharge de l\textquotesingle{}opérateur \texorpdfstring{$<$}{<} \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classutil_1_1_date_af12f2c545070b5e2b397be5379c5c3fd}{operator-\/}} (const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&p\+\_\+date) const
+\begin{DoxyCompactList}\small\item\em retourne le nombre de jours entre deux dates \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classutil_1_1_date_ab915f5fc90a1a167ba23bc10f2d82a33}{est\+Bissextile}} (int p\+\_\+annee)
+\begin{DoxyCompactList}\small\item\em Détermine si une année est bissextile ou non. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classutil_1_1_date_a71bac78eaab11b8a6c4e9c239665593f}{valider\+Date}} (int p\+\_\+jour, int p\+\_\+mois, int p\+\_\+annee)
+\begin{DoxyCompactList}\small\item\em Vérifie la validité d\textquotesingle{}une date. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classutil_1_1_date_aabb15110edb801b81c47ac815a006874}\label{classutil_1_1_date_aabb15110edb801b81c47ac815a006874} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&p\+\_\+os, const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&p\+\_\+date)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Related Symbols}
+(Note that these are not member symbols.) \begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{classutil_1_1_date_a3b88f9a1692395518a45b282a19f10e8}{operator$<$$<$}} (ostream \&p\+\_\+os, const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&p\+\_\+date)
+\begin{DoxyCompactList}\small\item\em surcharge de l\textquotesingle{}opérateur d\textquotesingle{}écriture dans un flux de sortie \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cette classe sert au maintien et à la manipulation des dates. 
+
+\begin{DoxyVerb}       La classe maintient dans un état cohérent ces renseignements.
+       Elle valide ce qu'on veut lui assigner.
+        Cette classe peut aussi servir à prendre la date courante du
+        système et à faire des calculs avec des dates.
+        La classe n'accepte que des dates valides, c'est la
+        responsabilité de l'utilisateur de la classe de s'en assurer.
+\end{DoxyVerb}
+ \begin{DoxyInvariant}{Invariant}
+La validité peut être vérifiée avec la méthode statique bool Date\+::valider\+Date(jour, mois, annee). 
+\end{DoxyInvariant}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutil_1_1_date_a47bf553a8ca3322b2a34c3d28e459480}\index{util::Date@{util::Date}!Date@{Date}}
+\index{Date@{Date}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{Date()}{Date()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a47bf553a8ca3322b2a34c3d28e459480} 
+util\+::\+Date\+::\+Date (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+jour}{, }\item[{int}]{p\+\_\+mois}{, }\item[{int}]{p\+\_\+annee}{}\end{DoxyParamCaption})}
+
+
+
+constructeur avec paramètres On construit un objet \doxylink{classutil_1_1_date}{Date} à partir de valeurs passées en paramètres. Les attributs sont assignés seulement si la date est considérée comme valide. Autrement, une erreur de précondition est générée. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+jour} & est un entier qui représente le jour de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+mois} & est un entier qui représente le mois de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+annee} & est un entier qui représente l\textquotesingle{}année de la date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+jour, p\+\_\+mois, p\+\_\+annee doivent correspondre à une date valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+l\textquotesingle{}objet construit a été initialisé à partir des entiers passés en paramètres 
+\end{DoxyPostcond}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutil_1_1_date_a8f404084c4a6ba8252c1afed11ac0330}\index{util::Date@{util::Date}!ajouteNbJour@{ajouteNbJour}}
+\index{ajouteNbJour@{ajouteNbJour}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{ajouteNbJour()}{ajouteNbJour()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a8f404084c4a6ba8252c1afed11ac0330} 
+void util\+::\+Date\+::ajoute\+Nb\+Jour (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+nb\+Jours}{}\end{DoxyParamCaption})}
+
+
+
+Ajoute ou retire un certain nombre de jours à la date courante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+nb\+Jour} & est une entier qui représente le nombre de jours à ajouter ou à soustraire s\textquotesingle{}il est négatif \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classutil_1_1_date_a7547e00e413145092c9b6b24f14959d6}\index{util::Date@{util::Date}!asgDate@{asgDate}}
+\index{asgDate@{asgDate}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{asgDate()}{asgDate()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a7547e00e413145092c9b6b24f14959d6} 
+void util\+::\+Date\+::asg\+Date (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+jour}{, }\item[{int}]{p\+\_\+mois}{, }\item[{int}]{p\+\_\+annee}{}\end{DoxyParamCaption})}
+
+
+
+Assigne une date à l\textquotesingle{}objet courant. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+jour} & est un entier qui représente le jour de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+mois} & est un entier qui représente le mois de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+annee} & est un entier qui représente l\textquotesingle{}année de la date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+jour, p\+\_\+mois, p\+\_\+annee doivent correspondre à une date valide 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+l\textquotesingle{}objet a été assigné à partir des entiers passés en paramètres 
+\end{DoxyPostcond}
+\Hypertarget{classutil_1_1_date_ab915f5fc90a1a167ba23bc10f2d82a33}\index{util::Date@{util::Date}!estBissextile@{estBissextile}}
+\index{estBissextile@{estBissextile}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{estBissextile()}{estBissextile()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_ab915f5fc90a1a167ba23bc10f2d82a33} 
+bool util\+::\+Date\+::est\+Bissextile (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+annee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Détermine si une année est bissextile ou non. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+annee} & un entier qui représente l\textquotesingle{}année à vérifier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+est\+Bissextile un booléen qui a la valeur true si l\textquotesingle{}année est bissextile et false sinon 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_af12f2c545070b5e2b397be5379c5c3fd}\index{util::Date@{util::Date}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_af12f2c545070b5e2b397be5379c5c3fd} 
+int util\+::\+Date\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&}]{p\+\_\+date}{}\end{DoxyParamCaption}) const}
+
+
+
+retourne le nombre de jours entre deux dates 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+date} & à soustraire à la date courante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un entier qui représente le nombre de jours entre la date courante et celle passée en paramètre 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_aefcf8a7520711f783fb0241d460480c5}\index{util::Date@{util::Date}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_aefcf8a7520711f783fb0241d460480c5} 
+bool util\+::\+Date\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&}]{p\+\_\+date}{}\end{DoxyParamCaption}) const}
+
+
+
+surcharge de l\textquotesingle{}opérateur \texorpdfstring{$<$}{<} 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+date} & à comparer à la date courante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si la date courante est plus petite que la date passée en paramètre 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_a8114f8e40cee24e1d7a58b910e8f4637}\index{util::Date@{util::Date}!operator==@{operator==}}
+\index{operator==@{operator==}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a8114f8e40cee24e1d7a58b910e8f4637} 
+bool util\+::\+Date\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&}]{p\+\_\+date}{}\end{DoxyParamCaption}) const}
+
+
+
+surcharge de l\textquotesingle{}opérateur == 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+date} & à comparer à la date courante \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si les deux dates sont égales ou non 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_a1807d80266630099b0daf45c642c2fb1}\index{util::Date@{util::Date}!reqAnnee@{reqAnnee}}
+\index{reqAnnee@{reqAnnee}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{reqAnnee()}{reqAnnee()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a1807d80266630099b0daf45c642c2fb1} 
+int util\+::\+Date\+::req\+Annee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+retourne l\textquotesingle{}année de la date 
+
+\begin{DoxyReturn}{Returns}
+un entier qui représente l\textquotesingle{}année de la date 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_ad92d1e9c4d570c5f31a8e06cf2e1ae8c}\index{util::Date@{util::Date}!reqDateFormatee@{reqDateFormatee}}
+\index{reqDateFormatee@{reqDateFormatee}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{reqDateFormatee()}{reqDateFormatee()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_ad92d1e9c4d570c5f31a8e06cf2e1ae8c} 
+string util\+::\+Date\+::req\+Date\+Formatee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+retourne une date formatée dans une chaîne de caracères (string) 
+
+\begin{DoxyReturn}{Returns}
+la date formatée dans une chaîne de caractères 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_a0f16b8e6a2530c2454136c6f46cfc105}\index{util::Date@{util::Date}!reqJour@{reqJour}}
+\index{reqJour@{reqJour}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{reqJour()}{reqJour()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a0f16b8e6a2530c2454136c6f46cfc105} 
+int util\+::\+Date\+::req\+Jour (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+retourne le jour de la date 
+
+\begin{DoxyReturn}{Returns}
+un entier qui représente le jour de la date 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_a86efd5dd1a920ce49d310168086d454d}\index{util::Date@{util::Date}!reqJourDeAnnee@{reqJourDeAnnee}}
+\index{reqJourDeAnnee@{reqJourDeAnnee}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{reqJourDeAnnee()}{reqJourDeAnnee()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a86efd5dd1a920ce49d310168086d454d} 
+int util\+::\+Date\+::req\+Jour\+De\+Annee (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+retourne le ième jour de l\textquotesingle{}année correspondant au jour de la date 
+
+\begin{DoxyReturn}{Returns}
+un entier qui représente le ième jour de l\textquotesingle{}année correspondant à la date 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_a63072bff8a5122b9ab11fe470927e7ca}\index{util::Date@{util::Date}!reqMois@{reqMois}}
+\index{reqMois@{reqMois}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{reqMois()}{reqMois()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a63072bff8a5122b9ab11fe470927e7ca} 
+int util\+::\+Date\+::req\+Mois (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+retourne le mois de la date 
+
+\begin{DoxyReturn}{Returns}
+un entier qui représente le mois de la date 
+\end{DoxyReturn}
+\Hypertarget{classutil_1_1_date_a71bac78eaab11b8a6c4e9c239665593f}\index{util::Date@{util::Date}!validerDate@{validerDate}}
+\index{validerDate@{validerDate}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{validerDate()}{validerDate()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a71bac78eaab11b8a6c4e9c239665593f} 
+bool util\+::\+Date\+::valider\+Date (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+jour}{, }\item[{int}]{p\+\_\+mois}{, }\item[{int}]{p\+\_\+annee}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Vérifie la validité d\textquotesingle{}une date. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+jour} & un entier représentant le jour de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+mois} & un entier représentant le mois de la date \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+annee} & un entier représentant l\textquotesingle{}année de la date \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un booléen indiquant si la date est valide ou non 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classutil_1_1_date_a3b88f9a1692395518a45b282a19f10e8}\index{util::Date@{util::Date}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!util::Date@{util::Date}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \label{classutil_1_1_date_a3b88f9a1692395518a45b282a19f10e8} 
+ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{p\+\_\+os}{, }\item[{const \mbox{\hyperlink{classutil_1_1_date}{Date}} \&}]{p\+\_\+date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [related]}}
+
+
+
+surcharge de l\textquotesingle{}opérateur d\textquotesingle{}écriture dans un flux de sortie 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+os} & un flux de sortie dans laquelle on va écrire \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date} & sortie dans le flux \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le flux dans lequel on a écrit la date, ceci pour les appels en cascade 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_date_8h}{Date.\+h}}\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_date_8cpp}{Date.\+cpp}}\end{DoxyCompactItemize}

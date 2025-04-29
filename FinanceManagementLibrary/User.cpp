@@ -10,41 +10,40 @@
 using namespace std;  
 namespace Finance_Management
 {
+
     /**
-    * \brief Constructor for the User class
-    * \param[in] p_userId User ID
-    * \param[in] p_userName User name
-    * \param[in] p_passwordHash Password hash
-    * \param[in] p_email User email
-    * \pre p_userId > 0
-    * \pre p_userName is not empty
-    * \pre p_passwordHash is not empty
-    * \pre p_email is not empty
-    * \post m_userId == p_userId
-    * \post m_userName == p_userName
-    * \post m_passwordHash == p_passwordHash
-    * \post m_email == p_email
-    */
+     * \brief Constructor for the User class
+     * \param[in] p_userId User ID
+     * \param[in] p_userName User name
+     * \param[in] p_passwordHash Password hash
+     * \param[in] p_email User email
+     * \pre p_userId > 0
+     * \pre p_userName is not empty
+     * \pre p_passwordHash is not empty
+     * \pre p_email is not empty
+     * \post m_userId == p_userId
+     * \post m_userName == p_userName
+     * \post m_passwordHash == p_passwordHash
+     * \post m_email == p_email
+     */
     User::User(int p_userId, const string& p_userName, const string& p_passwordHash, const string& p_email)
         : m_userId(p_userId), m_userName(p_userName), m_passwordHash(p_passwordHash), m_email(p_email) {
         PRECONDITION(p_userId > 0);
         PRECONDITION(!p_userName.empty());
         PRECONDITION(!p_passwordHash.empty());
         PRECONDITION(!p_email.empty());
+
         POSTCONDITION(m_userId == p_userId);
         POSTCONDITION(m_userName == p_userName);
         POSTCONDITION(m_passwordHash == p_passwordHash);
         POSTCONDITION(m_email == p_email);
-        POSTCONDITION(m_accounts.empty());
+
         INVARIANTS();
     }
+
     /**
     * \brief Copy constructor for the User class
     * \param[in] p_user User object to copy
-    * \pre p_user.m_userId > 0
-    * \pre p_user.m_userName is not empty
-    * \pre p_user.m_passwordHash is not empty
-    * \pre p_user.m_email is not empty
     * \post m_userId == p_user.m_userId
     * \post m_userName == p_user.m_userName
     * \post m_passwordHash == p_user.m_passwordHash
@@ -52,11 +51,12 @@ namespace Finance_Management
     * \post m_accounts == p_user.m_accounts
     */
     User::User(const User& p_user)
-        : m_userId(p_user.m_userId), m_userName(p_user.m_userName), m_passwordHash(p_user.m_passwordHash), m_email(p_user.m_email),
-        m_accounts(p_user.m_accounts) {
-        PRECONDITION(p_user.m_userId > 0);
-        PRECONDITION(!p_user.m_userName.empty());
-        PRECONDITION(!p_user.m_passwordHash.empty());
+        : m_userId(p_user.m_userId), m_userName(p_user.m_userName), m_passwordHash(p_user.m_passwordHash), m_email(p_user.m_email) {
+		vector<unique_ptr<Account>>::const_iterator it;
+        for (it = p_user.m_accounts.begin(); it != p_user.m_accounts.end(); ++it) 
+        {
+			m_accounts.push_back(make_unique<Account>(**it));
+        }
         PRECONDITION(!p_user.m_email.empty());
         POSTCONDITION(m_userId == p_user.m_userId);
         POSTCONDITION(m_userName == p_user.m_userName);
@@ -269,4 +269,17 @@ namespace Finance_Management
         INVARIANT(!m_email.empty());
         INVARIANT(m_userId > 0);
     };
+
+	/**
+	* \brief Formats the user information as a string.
+    */
+    std::string User::userFormat() const 
+    {
+		ostringstream p_os;
+		p_os << "User ID: " << m_userId << "\n"
+			<< "User Name: " << m_userName << "\n"
+			<< "Password Hash: " << m_passwordHash << "\n"
+			<< "Email: " << m_email << "\n";
+		return p_os.str();
+    }
 } //namespace Finance_Management

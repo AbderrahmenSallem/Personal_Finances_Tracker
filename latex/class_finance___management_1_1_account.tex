@@ -1,0 +1,403 @@
+\doxysection{Finance\+\_\+\+Management\+::Account Class Reference}
+\hypertarget{class_finance___management_1_1_account}{}\label{class_finance___management_1_1_account}\index{Finance\_Management::Account@{Finance\_Management::Account}}
+
+
+This class is used for managing and manipulating financial accounts.  
+
+
+
+
+{\ttfamily \#include $<$Account.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_finance___management_1_1_account_add32d3c6ab0b1784b417dc83d2ecdc27}\label{class_finance___management_1_1_account_add32d3c6ab0b1784b417dc83d2ecdc27} 
+{\bfseries Account} (int p\+\_\+account\+Id, const std\+::string \&p\+\_\+account\+Name, const std\+::string \&p\+\_\+account\+Type, double p\+\_\+balance, const std\+::string \&p\+\_\+currency)
+\item 
+\mbox{\hyperlink{class_finance___management_1_1_account_ad76b3a765f2c34f7722b0de5f721bad6}{Account}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_finance___management_1_1_account_a430f2cbf9e3981f4c725855a7769ee70}{\texorpdfstring{$\sim$}{\string~}\+Account}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_finance___management_1_1_account_a255e419ef811f8e3d008a0451dacd136}{get\+Account\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Gets the account ID. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_finance___management_1_1_account_af9f13dfc431c0cf7cc37024c16ce0326}{get\+Account\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the account name. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_finance___management_1_1_account_aefbc740f1f352ea1cfe81af2aa0c6525}{get\+Account\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Gets the account type. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_finance___management_1_1_account_a43f9a9ded8c0c5a110eb61530549defb}{get\+Balance}} () const
+\begin{DoxyCompactList}\small\item\em Gets the account balance. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_finance___management_1_1_account_aaeb9d956d5e2dc5d484d3682ce9fa114}{get\+Currency}} () const
+\begin{DoxyCompactList}\small\item\em Gets the account currency. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_finance___management_1_1_account_ae7ba19c665bedb2fba2e851f3b13a4c6}{set\+Account\+Name}} (const std\+::string \&p\+\_\+account\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the account name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_finance___management_1_1_account_aa19b518059f59df8acc788870d94f091}{set\+Account\+Type}} (const std\+::string \&p\+\_\+account\+Type)
+\begin{DoxyCompactList}\small\item\em Sets the account type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_finance___management_1_1_account_afe9cfa620a6bc1c8f12c0bbb5e4ad6a0}{set\+Balance}} (double p\+\_\+balance)
+\begin{DoxyCompactList}\small\item\em Sets the account balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_finance___management_1_1_account_a83659365c93d092008cb02e6500dc5a0}{set\+Currency}} (const std\+::string \&p\+\_\+currency)
+\begin{DoxyCompactList}\small\item\em Sets the account currency. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_finance___management_1_1_account_ae2207335ce822cf824db8ac436981442}{operator==}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account) const
+\begin{DoxyCompactList}\small\item\em Equality operator for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_finance___management_1_1_account_abf6bd16b432e081994ff0a5c14a48f4b}{operator$<$}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account) const
+\begin{DoxyCompactList}\small\item\em Less-\/than operator for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_finance___management_1_1_account_afc95d03579aedfa1bcc5bdde4b5458b5}{operator$>$}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account) const
+\begin{DoxyCompactList}\small\item\em Greater-\/than operator for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_finance___management_1_1_account_a895105d6ccbd331a80bcba137b8d0dcf}{operator$<$=}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account) const
+\begin{DoxyCompactList}\small\item\em Less-\/than-\/or-\/equal-\/to operator for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_finance___management_1_1_account_ace58df89117aa403610f18bc626aed3e}{operator$>$=}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account) const
+\begin{DoxyCompactList}\small\item\em Greater-\/than-\/or-\/equal-\/to operator for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_finance___management_1_1_account_a416c0de8ffc4d8362be0e9ea89f4711d}{operator!=}} (const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account) const
+\begin{DoxyCompactList}\small\item\em Inequality operator for the \doxylink{class_finance___management_1_1_account}{Account} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_finance___management_1_1_account_a05b4cb09586e163ff2bc367edbb15636}\label{class_finance___management_1_1_account_a05b4cb09586e163ff2bc367edbb15636} 
+std\+::string {\bfseries account\+Format} () const
+\begin{DoxyCompactList}\small\item\em Formats the account information as a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_finance___management_1_1_account_a40cad07199a9076700112f7c54aea55b}{verifie\+Invariant}} () const
+\begin{DoxyCompactList}\small\item\em Verifies the class invariants. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_finance___management_1_1_account_adc31af9c5968d1493dcdab1cd5ec1671}\label{class_finance___management_1_1_account_adc31af9c5968d1493dcdab1cd5ec1671} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&p\+\_\+os, const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&p\+\_\+account)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is used for managing and manipulating financial accounts. 
+
+\begin{DoxyVerb}  The class maintains a consistent state for account information.
+  It validates the data assigned to it.
+  This class can be used to represent various types of accounts,
+  perform operations such as comparisons, and manage account details.
+  The class ensures that the account data is valid, and it is the
+  responsibility of the user to provide valid input.
+\end{DoxyVerb}
+ \begin{DoxyInvariant}{Invariant}
+The validity of the account data can be ensured by using the provided setter methods and verifying the state of the object. 
+\end{DoxyInvariant}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_finance___management_1_1_account_ad76b3a765f2c34f7722b0de5f721bad6}\index{Finance\_Management::Account@{Finance\_Management::Account}!Account@{Account}}
+\index{Account@{Account}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{Account()}{Account()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_ad76b3a765f2c34f7722b0de5f721bad6} 
+Finance\+\_\+\+Management\+::\+Account\+::\+Account (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & \doxylink{class_finance___management_1_1_account}{Account} object to copy ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+account\+Id == p\+\_\+account.\+m\+\_\+account\+Id ~\newline
+ 
+
+m\+\_\+account\+Name == p\+\_\+account.\+m\+\_\+account\+Name ~\newline
+ 
+
+m\+\_\+account\+Type == p\+\_\+account.\+m\+\_\+account\+Type ~\newline
+ 
+
+m\+\_\+balance == p\+\_\+account.\+m\+\_\+balance ~\newline
+ 
+
+m\+\_\+currency == p\+\_\+account.\+m\+\_\+currency 
+\end{DoxyPostcond}
+\Hypertarget{class_finance___management_1_1_account_a430f2cbf9e3981f4c725855a7769ee70}\index{Finance\_Management::Account@{Finance\_Management::Account}!````~Account@{\texorpdfstring{$\sim$}{\string~}Account}}
+\index{````~Account@{\texorpdfstring{$\sim$}{\string~}Account}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Account()}{\string~Account()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a430f2cbf9e3981f4c725855a7769ee70} 
+Finance\+\_\+\+Management\+::\+Account\+::\texorpdfstring{$\sim$}{\string~}\+Account (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+Cleans up any resources used by the \doxylink{class_finance___management_1_1_account}{Account} object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_finance___management_1_1_account_a255e419ef811f8e3d008a0451dacd136}\index{Finance\_Management::Account@{Finance\_Management::Account}!getAccountId@{getAccountId}}
+\index{getAccountId@{getAccountId}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{getAccountId()}{getAccountId()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a255e419ef811f8e3d008a0451dacd136} 
+int Finance\+\_\+\+Management\+::\+Account\+::get\+Account\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the account ID. 
+
+\begin{DoxyReturn}{Returns}
+The account ID. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_af9f13dfc431c0cf7cc37024c16ce0326}\index{Finance\_Management::Account@{Finance\_Management::Account}!getAccountName@{getAccountName}}
+\index{getAccountName@{getAccountName}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{getAccountName()}{getAccountName()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_af9f13dfc431c0cf7cc37024c16ce0326} 
+const string \& Finance\+\_\+\+Management\+::\+Account\+::get\+Account\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the account name. 
+
+\begin{DoxyReturn}{Returns}
+The account name. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_aefbc740f1f352ea1cfe81af2aa0c6525}\index{Finance\_Management::Account@{Finance\_Management::Account}!getAccountType@{getAccountType}}
+\index{getAccountType@{getAccountType}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{getAccountType()}{getAccountType()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_aefbc740f1f352ea1cfe81af2aa0c6525} 
+const string \& Finance\+\_\+\+Management\+::\+Account\+::get\+Account\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the account type. 
+
+\begin{DoxyReturn}{Returns}
+The account type. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_a43f9a9ded8c0c5a110eb61530549defb}\index{Finance\_Management::Account@{Finance\_Management::Account}!getBalance@{getBalance}}
+\index{getBalance@{getBalance}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{getBalance()}{getBalance()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a43f9a9ded8c0c5a110eb61530549defb} 
+double Finance\+\_\+\+Management\+::\+Account\+::get\+Balance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the account balance. 
+
+\begin{DoxyReturn}{Returns}
+The account balance. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_aaeb9d956d5e2dc5d484d3682ce9fa114}\index{Finance\_Management::Account@{Finance\_Management::Account}!getCurrency@{getCurrency}}
+\index{getCurrency@{getCurrency}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{getCurrency()}{getCurrency()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_aaeb9d956d5e2dc5d484d3682ce9fa114} 
+const string \& Finance\+\_\+\+Management\+::\+Account\+::get\+Currency (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the account currency. 
+
+\begin{DoxyReturn}{Returns}
+The account currency. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_a416c0de8ffc4d8362be0e9ea89f4711d}\index{Finance\_Management::Account@{Finance\_Management::Account}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a416c0de8ffc4d8362be0e9ea89f4711d} 
+bool Finance\+\_\+\+Management\+::\+Account\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption}) const}
+
+
+
+Inequality operator for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to compare with. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the accounts are not equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_abf6bd16b432e081994ff0a5c14a48f4b}\index{Finance\_Management::Account@{Finance\_Management::Account}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_abf6bd16b432e081994ff0a5c14a48f4b} 
+bool Finance\+\_\+\+Management\+::\+Account\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption}) const}
+
+
+
+Less-\/than operator for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to compare with. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this account is less than the other account, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_a895105d6ccbd331a80bcba137b8d0dcf}\index{Finance\_Management::Account@{Finance\_Management::Account}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{operator$<$=()}{operator<=()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a895105d6ccbd331a80bcba137b8d0dcf} 
+bool Finance\+\_\+\+Management\+::\+Account\+::operator$<$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption}) const}
+
+
+
+Less-\/than-\/or-\/equal-\/to operator for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to compare with. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this account is less than or equal to the other account, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_ae2207335ce822cf824db8ac436981442}\index{Finance\_Management::Account@{Finance\_Management::Account}!operator==@{operator==}}
+\index{operator==@{operator==}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_ae2207335ce822cf824db8ac436981442} 
+bool Finance\+\_\+\+Management\+::\+Account\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to compare with. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the accounts are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_afc95d03579aedfa1bcc5bdde4b5458b5}\index{Finance\_Management::Account@{Finance\_Management::Account}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_afc95d03579aedfa1bcc5bdde4b5458b5} 
+bool Finance\+\_\+\+Management\+::\+Account\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption}) const}
+
+
+
+Greater-\/than operator for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to compare with. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this account is greater than the other account, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_ace58df89117aa403610f18bc626aed3e}\index{Finance\_Management::Account@{Finance\_Management::Account}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{operator$>$=()}{operator>=()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_ace58df89117aa403610f18bc626aed3e} 
+bool Finance\+\_\+\+Management\+::\+Account\+::operator$>$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_account}{Account}} \&}]{p\+\_\+account}{}\end{DoxyParamCaption}) const}
+
+
+
+Greater-\/than-\/or-\/equal-\/to operator for the \doxylink{class_finance___management_1_1_account}{Account} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account} & The account to compare with. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this account is greater than or equal to the other account, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_finance___management_1_1_account_ae7ba19c665bedb2fba2e851f3b13a4c6}\index{Finance\_Management::Account@{Finance\_Management::Account}!setAccountName@{setAccountName}}
+\index{setAccountName@{setAccountName}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{setAccountName()}{setAccountName()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_ae7ba19c665bedb2fba2e851f3b13a4c6} 
+void Finance\+\_\+\+Management\+::\+Account\+::set\+Account\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+account\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Sets the account name. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account\+Name} & The new account name. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+account\+Name is not empty. ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+account\+Name == p\+\_\+account\+Name. 
+\end{DoxyPostcond}
+\Hypertarget{class_finance___management_1_1_account_aa19b518059f59df8acc788870d94f091}\index{Finance\_Management::Account@{Finance\_Management::Account}!setAccountType@{setAccountType}}
+\index{setAccountType@{setAccountType}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{setAccountType()}{setAccountType()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_aa19b518059f59df8acc788870d94f091} 
+void Finance\+\_\+\+Management\+::\+Account\+::set\+Account\+Type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+account\+Type}{}\end{DoxyParamCaption})}
+
+
+
+Sets the account type. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+account\+Type} & The new account type. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+account\+Type is not empty. ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+account\+Type == p\+\_\+account\+Type. 
+\end{DoxyPostcond}
+\Hypertarget{class_finance___management_1_1_account_afe9cfa620a6bc1c8f12c0bbb5e4ad6a0}\index{Finance\_Management::Account@{Finance\_Management::Account}!setBalance@{setBalance}}
+\index{setBalance@{setBalance}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{setBalance()}{setBalance()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_afe9cfa620a6bc1c8f12c0bbb5e4ad6a0} 
+void Finance\+\_\+\+Management\+::\+Account\+::set\+Balance (\begin{DoxyParamCaption}\item[{double}]{p\+\_\+balance}{}\end{DoxyParamCaption})}
+
+
+
+Sets the account balance. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+balance} & The new account balance. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_finance___management_1_1_account_a83659365c93d092008cb02e6500dc5a0}\index{Finance\_Management::Account@{Finance\_Management::Account}!setCurrency@{setCurrency}}
+\index{setCurrency@{setCurrency}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{setCurrency()}{setCurrency()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a83659365c93d092008cb02e6500dc5a0} 
+void Finance\+\_\+\+Management\+::\+Account\+::set\+Currency (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+currency}{}\end{DoxyParamCaption})}
+
+
+
+Sets the account currency. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+currency} & The new account currency. ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+currency is not empty. ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+currency == p\+\_\+currency. 
+\end{DoxyPostcond}
+\Hypertarget{class_finance___management_1_1_account_a40cad07199a9076700112f7c54aea55b}\index{Finance\_Management::Account@{Finance\_Management::Account}!verifieInvariant@{verifieInvariant}}
+\index{verifieInvariant@{verifieInvariant}!Finance\_Management::Account@{Finance\_Management::Account}}
+\doxysubsubsection{\texorpdfstring{verifieInvariant()}{verifieInvariant()}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_account_a40cad07199a9076700112f7c54aea55b} 
+void Finance\+\_\+\+Management\+::\+Account\+::verifie\+Invariant (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Verifies the class invariants. 
+
+This method ensures that the class invariants are maintained. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_account_8h}{Account.\+h}}\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_account_8cpp}{Account.\+cpp}}\end{DoxyCompactItemize}

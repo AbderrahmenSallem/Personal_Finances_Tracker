@@ -1,0 +1,60 @@
+\doxysection{Invariant\+Exception Class Reference}
+\hypertarget{class_invariant_exception}{}\label{class_invariant_exception}\index{InvariantException@{InvariantException}}
+
+
+Classe pour la gestion des erreurs d\textquotesingle{}invariant.  
+
+
+
+
+{\ttfamily \#include $<$Contrat\+Exception.\+h$>$}
+
+Inheritance diagram for Invariant\+Exception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_invariant_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_invariant_exception_abb91388b6e3dcf4a47d16d748df16312}{Invariant\+Exception}} (const std\+::string \&p\+\_\+fichier, unsigned int p\+\_\+ligne, const std\+::string \&p\+\_\+expression)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{class_invariant_exception}{Invariant\+Exception} en initialisant la classe de base \doxylink{class_contrat_exception}{Contrat\+Exception}. La classe représente des erreurs d\textquotesingle{}invariant dans la théorie du contrat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_contrat_exception}{Contrat\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_contrat_exception_a13b3365dfac9e93521e8773c3eac71f1}{Contrat\+Exception}} (const std\+::string \&p\+\_\+fichier, unsigned int p\+\_\+ligne, const std\+::string \&p\+\_\+expression, const std\+::string \&p\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe de base \doxylink{class_contrat_exception}{Contrat\+Exception}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_contrat_exception_a59c9ed58985dcdd70af4ee50b2937707}{req\+Texte\+Exception}} () const
+\begin{DoxyCompactList}\small\item\em Construit le texte complet relié à l\textquotesingle{}exception de contrat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe pour la gestion des erreurs d\textquotesingle{}invariant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_invariant_exception_abb91388b6e3dcf4a47d16d748df16312}\index{InvariantException@{InvariantException}!InvariantException@{InvariantException}}
+\index{InvariantException@{InvariantException}!InvariantException@{InvariantException}}
+\doxysubsubsection{\texorpdfstring{InvariantException()}{InvariantException()}}
+{\footnotesize\ttfamily \label{class_invariant_exception_abb91388b6e3dcf4a47d16d748df16312} 
+Invariant\+Exception\+::\+Invariant\+Exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{p\+\_\+fichier}{, }\item[{unsigned int}]{p\+\_\+ligne}{, }\item[{const std\+::string \&}]{p\+\_\+expression}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{class_invariant_exception}{Invariant\+Exception} en initialisant la classe de base \doxylink{class_contrat_exception}{Contrat\+Exception}. La classe représente des erreurs d\textquotesingle{}invariant dans la théorie du contrat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+fichier} & chaîne de caractères représentant le fichier source dans lequel a eu lieu l\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+ligne} & un entier représentant la ligne où a eu lieu l\textquotesingle{}erreur \\
+\hline
+{\em p\+\_\+expression} & Test logique qui a échoué \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_contrat_exception_8h}{Contrat\+Exception.\+h}}\item 
+Finance\+Management\+Library/\mbox{\hyperlink{_contrat_exception_8cpp}{Contrat\+Exception.\+cpp}}\end{DoxyCompactItemize}
