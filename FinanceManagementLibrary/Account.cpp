@@ -27,8 +27,8 @@ namespace Finance_Management {
    * \post m_balance == p_balance  
    * \post m_currency == p_currency  
    */  
-   Account::Account(int p_accountId, const string& p_accountName, const string& p_accountType,  
-                    double p_balance, const string& p_currency)  
+   Account::Account(int p_accountId, const std::string& p_accountName, const std::string& p_accountType,
+       double p_balance, const std::string& p_currency)
        : m_accountId(p_accountId), m_accountName(p_accountName), m_accountType(p_accountType),  
          m_balance(p_balance), m_currency(p_currency) {  
        PRECONDITION(p_accountId > 0);  
@@ -232,7 +232,7 @@ namespace Finance_Management {
    * \brief Formats the account information as a string.
    * \return a string.
    */
-   string Account::accountFormat() const 
+   std::string Account::accountFormat() const 
    {
        ostringstream p_os;
        p_os << "Account ID: " << m_accountId << "\n"

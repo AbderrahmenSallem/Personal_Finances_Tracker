@@ -12,9 +12,8 @@ This class is used for managing user data and accounts.
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_user_a71fdd140aab4ed2c3a2a01035246a860}\label{class_user_a71fdd140aab4ed2c3a2a01035246a860} 
-{\bfseries User} (int p\+\_\+user\+Id, const std\+::string \&p\+\_\+user\+Name, const std\+::string \&p\+\_\+password\+Hash, const std\+::string \&p\+\_\+email)
-\item 
+\mbox{\hyperlink{class_user_a71fdd140aab4ed2c3a2a01035246a860}{User}} (int p\+\_\+user\+Id, const std\+::string \&p\+\_\+user\+Name, const std\+::string \&p\+\_\+password\+Hash, const std\+::string \&p\+\_\+email)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_user_ac849b4cc2f224ea9f50f436e2a841b56}{User}} (const \mbox{\hyperlink{class_user}{User}} \&p\+\_\+user)
 \begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{class_user}{User} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_user_ac00b72ad64eb4149f7b21b9f5468c2b2}{\texorpdfstring{$\sim$}{\string~}\+User}} ()
@@ -55,8 +54,7 @@ const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ Account $>$ $>$ \& \mbox{\hyper
 \begin{DoxyCompactList}\small\item\em Gets the list of accounts. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_user_a90863559ca701766f205419aa14d5ca5}{verifie\+Invariant}} () const
 \begin{DoxyCompactList}\small\item\em Verifies the class invariants. \end{DoxyCompactList}\item 
-\Hypertarget{class_user_a90a1da6e32bba77887950acc166ad1e9}\label{class_user_a90a1da6e32bba77887950acc166ad1e9} 
-std\+::string {\bfseries user\+Format} () const
+std\+::string \mbox{\hyperlink{class_user_a90a1da6e32bba77887950acc166ad1e9}{user\+Format}} () const
 \begin{DoxyCompactList}\small\item\em Formats the user information as a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -80,9 +78,48 @@ The class ensures that the user data remains valid and consistent. ~\newline
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_user_a71fdd140aab4ed2c3a2a01035246a860}\index{User@{User}!User@{User}}
+\index{User@{User}!User@{User}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_user_a71fdd140aab4ed2c3a2a01035246a860} 
+User\+::\+User (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+user\+Id}{, }\item[{const std\+::string \&}]{p\+\_\+user\+Name}{, }\item[{const std\+::string \&}]{p\+\_\+password\+Hash}{, }\item[{const std\+::string \&}]{p\+\_\+email}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_user}{User} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+user\+Id} & \doxylink{class_user}{User} ID \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+user\+Name} & \doxylink{class_user}{User} name \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+password\+Hash} & Password hash \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+email} & \doxylink{class_user}{User} email \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+user\+Id \texorpdfstring{$>$}{>} 0 
+
+p\+\_\+user\+Name is not empty 
+
+p\+\_\+password\+Hash is not empty 
+
+p\+\_\+email is not empty 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+user\+Id == p\+\_\+user\+Id 
+
+m\+\_\+user\+Name == p\+\_\+user\+Name 
+
+m\+\_\+password\+Hash == p\+\_\+password\+Hash 
+
+m\+\_\+email == p\+\_\+email 
+\end{DoxyPostcond}
 \Hypertarget{class_user_ac849b4cc2f224ea9f50f436e2a841b56}\index{User@{User}!User@{User}}
 \index{User@{User}!User@{User}}
-\doxysubsubsection{\texorpdfstring{User()}{User()}}
+\doxysubsubsection{\texorpdfstring{User()}{User()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_user_ac849b4cc2f224ea9f50f436e2a841b56} 
 User\+::\+User (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{p\+\_\+user}{}\end{DoxyParamCaption})}
 
@@ -418,6 +455,19 @@ p\+\_\+user\+Name is not empty.
 \begin{DoxyPostcond}{Postcondition}
 m\+\_\+user\+Name == p\+\_\+user\+Name. 
 \end{DoxyPostcond}
+\Hypertarget{class_user_a90a1da6e32bba77887950acc166ad1e9}\index{User@{User}!userFormat@{userFormat}}
+\index{userFormat@{userFormat}!User@{User}}
+\doxysubsubsection{\texorpdfstring{userFormat()}{userFormat()}}
+{\footnotesize\ttfamily \label{class_user_a90a1da6e32bba77887950acc166ad1e9} 
+std\+::string User\+::user\+Format (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Formats the user information as a string. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
 \Hypertarget{class_user_a90863559ca701766f205419aa14d5ca5}\index{User@{User}!verifieInvariant@{verifieInvariant}}
 \index{verifieInvariant@{verifieInvariant}!User@{User}}
 \doxysubsubsection{\texorpdfstring{verifieInvariant()}{verifieInvariant()}}

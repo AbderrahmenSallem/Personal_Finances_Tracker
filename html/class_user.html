@@ -116,8 +116,8 @@ $(function(){initNavTree('class_user.html',''); initResizable(true); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a71fdd140aab4ed2c3a2a01035246a860" id="r_a71fdd140aab4ed2c3a2a01035246a860"><td class="memItemLeft" align="right" valign="top"><a id="a71fdd140aab4ed2c3a2a01035246a860" name="a71fdd140aab4ed2c3a2a01035246a860"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>User</b> (int p_userId, const std::string &amp;p_userName, const std::string &amp;p_passwordHash, const std::string &amp;p_email)</td></tr>
+<tr class="memitem:a71fdd140aab4ed2c3a2a01035246a860" id="r_a71fdd140aab4ed2c3a2a01035246a860"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71fdd140aab4ed2c3a2a01035246a860">User</a> (int p_userId, const std::string &amp;p_userName, const std::string &amp;p_passwordHash, const std::string &amp;p_email)</td></tr>
+<tr class="memdesc:a71fdd140aab4ed2c3a2a01035246a860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_user.html" title="This class is used for managing user data and accounts.">User</a> class.  <br /></td></tr>
 <tr class="separator:a71fdd140aab4ed2c3a2a01035246a860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac849b4cc2f224ea9f50f436e2a841b56" id="r_ac849b4cc2f224ea9f50f436e2a841b56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac849b4cc2f224ea9f50f436e2a841b56">User</a> (const <a class="el" href="class_user.html">User</a> &amp;p_user)</td></tr>
 <tr class="memdesc:ac849b4cc2f224ea9f50f436e2a841b56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for the <a class="el" href="class_user.html" title="This class is used for managing user data and accounts.">User</a> class.  <br /></td></tr>
@@ -179,9 +179,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a90863559ca701766f205419aa14d5ca5" id="r_a90863559ca701766f205419aa14d5ca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90863559ca701766f205419aa14d5ca5">verifieInvariant</a> () const</td></tr>
 <tr class="memdesc:a90863559ca701766f205419aa14d5ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the class invariants.  <br /></td></tr>
 <tr class="separator:a90863559ca701766f205419aa14d5ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90a1da6e32bba77887950acc166ad1e9" id="r_a90a1da6e32bba77887950acc166ad1e9"><td class="memItemLeft" align="right" valign="top"><a id="a90a1da6e32bba77887950acc166ad1e9" name="a90a1da6e32bba77887950acc166ad1e9"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>userFormat</b> () const</td></tr>
-<tr class="memdesc:a90a1da6e32bba77887950acc166ad1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the user information as a string. <br /></td></tr>
+<tr class="memitem:a90a1da6e32bba77887950acc166ad1e9" id="r_a90a1da6e32bba77887950acc166ad1e9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90a1da6e32bba77887950acc166ad1e9">userFormat</a> () const</td></tr>
+<tr class="memdesc:a90a1da6e32bba77887950acc166ad1e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the user information as a string.  <br /></td></tr>
 <tr class="separator:a90a1da6e32bba77887950acc166ad1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -196,8 +195,64 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>userFormat</b>
  The validity of the user data can be verified using the <br  />
  <a class="el" href="#a90863559ca701766f205419aa14d5ca5" title="Verifies the class invariants.">verifieInvariant()</a> method. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a71fdd140aab4ed2c3a2a01035246a860" name="a71fdd140aab4ed2c3a2a01035246a860"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71fdd140aab4ed2c3a2a01035246a860">&#9670;&#160;</a></span>User() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">User::User </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>p_userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>p_userName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>p_passwordHash</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>p_email</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="class_user.html" title="This class is used for managing user data and accounts.">User</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_userId</td><td><a class="el" href="class_user.html" title="This class is used for managing user data and accounts.">User</a> ID </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_userName</td><td><a class="el" href="class_user.html" title="This class is used for managing user data and accounts.">User</a> name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_passwordHash</td><td>Password hash </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_email</td><td><a class="el" href="class_user.html" title="This class is used for managing user data and accounts.">User</a> email </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>p_userId &gt; 0 </dd>
+<dd>
+p_userName is not empty </dd>
+<dd>
+p_passwordHash is not empty </dd>
+<dd>
+p_email is not empty </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>m_userId == p_userId </dd>
+<dd>
+m_userName == p_userName </dd>
+<dd>
+m_passwordHash == p_passwordHash </dd>
+<dd>
+m_email == p_email </dd></dl>
+
+</div>
+</div>
 <a id="ac849b4cc2f224ea9f50f436e2a841b56" name="ac849b4cc2f224ea9f50f436e2a841b56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac849b4cc2f224ea9f50f436e2a841b56">&#9670;&#160;</a></span>User()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac849b4cc2f224ea9f50f436e2a841b56">&#9670;&#160;</a></span>User() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -675,6 +730,26 @@ m_accounts == p_user.m_accounts </dd></dl>
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>p_userName is not empty. </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>m_userName == p_userName. </dd></dl>
+
+</div>
+</div>
+<a id="a90a1da6e32bba77887950acc166ad1e9" name="a90a1da6e32bba77887950acc166ad1e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a1da6e32bba77887950acc166ad1e9">&#9670;&#160;</a></span>userFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string User::userFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Formats the user information as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>

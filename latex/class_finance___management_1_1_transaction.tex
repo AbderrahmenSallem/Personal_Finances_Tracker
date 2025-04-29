@@ -12,9 +12,8 @@ This class is used for managing financial transactions.
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_finance___management_1_1_transaction_a2e71f00e4855681bdf7454351fe49e83}\label{class_finance___management_1_1_transaction_a2e71f00e4855681bdf7454351fe49e83} 
-{\bfseries Transaction} (int p\+\_\+transaction\+Id, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&p\+\_\+date, const std\+::string \&p\+\_\+description, double p\+\_\+amount, const std\+::string \&p\+\_\+transaction\+Type, const std\+::string \&p\+\_\+category)
-\item 
+\mbox{\hyperlink{class_finance___management_1_1_transaction_a2e71f00e4855681bdf7454351fe49e83}{Transaction}} (int p\+\_\+transaction\+Id, const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&p\+\_\+date, const std\+::string \&p\+\_\+description, double p\+\_\+amount, const std\+::string \&p\+\_\+transaction\+Type, const std\+::string \&p\+\_\+category)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{class_finance___management_1_1_transaction}{Transaction} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_finance___management_1_1_transaction_a80129d391df560fd1cbdafd1a11e1d2d}{Transaction}} (const \mbox{\hyperlink{class_finance___management_1_1_transaction}{Transaction}} \&p\+\_\+transaction)
 \begin{DoxyCompactList}\small\item\em Copy constructor for the \doxylink{class_finance___management_1_1_transaction}{Transaction} class. \end{DoxyCompactList}\item 
 \Hypertarget{class_finance___management_1_1_transaction_a89306cbb3e4dc55620c09764a91e9e89}\label{class_finance___management_1_1_transaction_a89306cbb3e4dc55620c09764a91e9e89} 
@@ -78,9 +77,74 @@ The class ensures that the transaction data remains valid and consistent. ~\newl
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_finance___management_1_1_transaction_a2e71f00e4855681bdf7454351fe49e83}\index{Finance\_Management::Transaction@{Finance\_Management::Transaction}!Transaction@{Transaction}}
+\index{Transaction@{Transaction}!Finance\_Management::Transaction@{Finance\_Management::Transaction}}
+\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_finance___management_1_1_transaction_a2e71f00e4855681bdf7454351fe49e83} 
+Finance\+\_\+\+Management\+::\+Transaction\+::\+Transaction (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+transaction\+Id}{, }\item[{const \mbox{\hyperlink{classutil_1_1_date}{util\+::\+Date}} \&}]{p\+\_\+date}{, }\item[{const std\+::string \&}]{p\+\_\+description}{, }\item[{double}]{p\+\_\+amount}{, }\item[{const std\+::string \&}]{p\+\_\+transaction\+Type}{, }\item[{const std\+::string \&}]{p\+\_\+category}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{class_finance___management_1_1_transaction}{Transaction} class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+transaction\+Id} & \doxylink{class_finance___management_1_1_transaction}{Transaction} ID ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+date} & \doxylink{class_finance___management_1_1_transaction}{Transaction} date ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+description} & \doxylink{class_finance___management_1_1_transaction}{Transaction} description ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+amount} & \doxylink{class_finance___management_1_1_transaction}{Transaction} amount ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+transaction\+Type} & \doxylink{class_finance___management_1_1_transaction}{Transaction} type ~\newline
+ \\
+\hline
+\mbox{\texttt{ in}}  & {\em p\+\_\+category} & \doxylink{class_finance___management_1_1_transaction}{Transaction} category ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+p\+\_\+transaction\+Id \texorpdfstring{$>$}{>} 0 ~\newline
+ 
+
+p\+\_\+amount \texorpdfstring{$>$}{>}= 0 ~\newline
+ 
+
+!p\+\_\+description.empty() ~\newline
+ 
+
+!p\+\_\+transaction\+Type.empty() ~\newline
+ 
+
+!p\+\_\+category.empty() ~\newline
+ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+m\+\_\+transaction\+Id == p\+\_\+transaction\+Id ~\newline
+ 
+
+m\+\_\+date == p\+\_\+date ~\newline
+ 
+
+m\+\_\+description == p\+\_\+description ~\newline
+ 
+
+m\+\_\+amount == p\+\_\+amount ~\newline
+ 
+
+m\+\_\+transaction\+Type == p\+\_\+transaction\+Type ~\newline
+ 
+
+m\+\_\+category == p\+\_\+category 
+\end{DoxyPostcond}
 \Hypertarget{class_finance___management_1_1_transaction_a80129d391df560fd1cbdafd1a11e1d2d}\index{Finance\_Management::Transaction@{Finance\_Management::Transaction}!Transaction@{Transaction}}
 \index{Transaction@{Transaction}!Finance\_Management::Transaction@{Finance\_Management::Transaction}}
-\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}}
+\doxysubsubsection{\texorpdfstring{Transaction()}{Transaction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_finance___management_1_1_transaction_a80129d391df560fd1cbdafd1a11e1d2d} 
 Finance\+\_\+\+Management\+::\+Transaction\+::\+Transaction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_finance___management_1_1_transaction}{Transaction}} \&}]{p\+\_\+transaction}{}\end{DoxyParamCaption})}
 

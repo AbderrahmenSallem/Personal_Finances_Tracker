@@ -30,8 +30,8 @@ namespace Finance_Management
   * \post m_transactionType == p_transactionType  
   * \post m_category == p_category  
   */  
-  Transaction::Transaction(int p_transactionId, const Date& p_date, const string& p_description,  
-      double p_amount, const string& p_transactionType, const string& p_category)  
+  Transaction::Transaction(int p_transactionId, const util::Date& p_date, const std::string& p_description,
+      double p_amount, const std::string& p_transactionType, const std::string& p_category)
       : m_transactionId(p_transactionId), m_date(p_date), m_description(p_description),  
       m_amount(p_amount), m_transactionType(p_transactionType), m_category(p_category) {  
       PRECONDITION(p_transactionId > 0);  

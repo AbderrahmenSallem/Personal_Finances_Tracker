@@ -26,7 +26,7 @@ namespace Finance_Management
      * \post m_passwordHash == p_passwordHash
      * \post m_email == p_email
      */
-    User::User(int p_userId, const string& p_userName, const string& p_passwordHash, const string& p_email)
+    User::User(int p_userId, const std::string& p_userName, const std::string& p_passwordHash, const std::string& p_email)
         : m_userId(p_userId), m_userName(p_userName), m_passwordHash(p_passwordHash), m_email(p_email) {
         PRECONDITION(p_userId > 0);
         PRECONDITION(!p_userName.empty());
@@ -272,6 +272,7 @@ namespace Finance_Management
 
 	/**
 	* \brief Formats the user information as a string.
+    * \return string
     */
     std::string User::userFormat() const 
     {

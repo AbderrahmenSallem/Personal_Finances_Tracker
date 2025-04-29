@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['account_0',['Account',['../class_finance___management_1_1_account.html',1,'Finance_Management::Account'],['../class_finance___management_1_1_account.html#ad76b3a765f2c34f7722b0de5f721bad6',1,'Finance_Management::Account::Account()']]],
+  ['account_0',['Account',['../class_finance___management_1_1_account.html',1,'Finance_Management::Account'],['../class_finance___management_1_1_account.html#add32d3c6ab0b1784b417dc83d2ecdc27',1,'Finance_Management::Account::Account(int p_accountId, const std::string &amp;p_accountName, const std::string &amp;p_accountType, double p_balance, const std::string &amp;p_currency)'],['../class_finance___management_1_1_account.html#ad76b3a765f2c34f7722b0de5f721bad6',1,'Finance_Management::Account::Account(const Account &amp;p_account)']]],
   ['account_2ecpp_1',['Account.cpp',['../_account_8cpp.html',1,'']]],
   ['account_2eh_2',['Account.h',['../_account_8h.html',1,'']]],
   ['accountalreadyexistsexception_3',['AccountAlreadyExistsException',['../class_account_already_exists_exception.html',1,'AccountAlreadyExistsException'],['../class_account_already_exists_exception.html#ade495344b8c3f825318b10db29d79fda',1,'AccountAlreadyExistsException::AccountAlreadyExistsException()']]],
-  ['accountformat_4',['accountFormat',['../class_finance___management_1_1_account.html#a05b4cb09586e163ff2bc367edbb15636',1,'Finance_Management::Account']]],
+  ['accountformat_4',['accountFormat',['../class_finance___management_1_1_account.html#a4ef126754d117167cf7058f7da1439d6',1,'Finance_Management::Account']]],
   ['accountnotfoundexception_5',['AccountNotFoundException',['../class_account_not_found_exception.html',1,'AccountNotFoundException'],['../class_account_not_found_exception.html#a59c69321529f9a33c57b976bc61e7b9e',1,'AccountNotFoundException::AccountNotFoundException()']]],
   ['accountpresent_6',['accountPresent',['../class_user.html#ad627575bdd85b2b0f2b638afc807ec01',1,'User']]],
   ['addaccount_7',['addAccount',['../class_user.html#a9d7a7b9e57297a240231e43ad0a8b16b',1,'User']]],

@@ -1,5 +1,6 @@
 var class_finance___management_1_1_transaction =
 [
+    [ "Transaction", "class_finance___management_1_1_transaction.html#a2e71f00e4855681bdf7454351fe49e83", null ],
     [ "Transaction", "class_finance___management_1_1_transaction.html#a80129d391df560fd1cbdafd1a11e1d2d", null ],
     [ "~Transaction", "class_finance___management_1_1_transaction.html#a89306cbb3e4dc55620c09764a91e9e89", null ],
     [ "getAmount", "class_finance___management_1_1_transaction.html#afd18dd6a35d06b6b88ed87486ca5b3f5", null ],

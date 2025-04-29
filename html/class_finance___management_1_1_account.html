@@ -117,8 +117,8 @@ $(function(){initNavTree('class_finance___management_1_1_account.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:add32d3c6ab0b1784b417dc83d2ecdc27" id="r_add32d3c6ab0b1784b417dc83d2ecdc27"><td class="memItemLeft" align="right" valign="top"><a id="add32d3c6ab0b1784b417dc83d2ecdc27" name="add32d3c6ab0b1784b417dc83d2ecdc27"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Account</b> (int p_accountId, const std::string &amp;p_accountName, const std::string &amp;p_accountType, double p_balance, const std::string &amp;p_currency)</td></tr>
+<tr class="memitem:add32d3c6ab0b1784b417dc83d2ecdc27" id="r_add32d3c6ab0b1784b417dc83d2ecdc27"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add32d3c6ab0b1784b417dc83d2ecdc27">Account</a> (int p_accountId, const std::string &amp;p_accountName, const std::string &amp;p_accountType, double p_balance, const std::string &amp;p_currency)</td></tr>
+<tr class="memdesc:add32d3c6ab0b1784b417dc83d2ecdc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> class.  <br /></td></tr>
 <tr class="separator:add32d3c6ab0b1784b417dc83d2ecdc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76b3a765f2c34f7722b0de5f721bad6" id="r_ad76b3a765f2c34f7722b0de5f721bad6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad76b3a765f2c34f7722b0de5f721bad6">Account</a> (const <a class="el" href="class_finance___management_1_1_account.html">Account</a> &amp;p_account)</td></tr>
 <tr class="memdesc:ad76b3a765f2c34f7722b0de5f721bad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor for the <a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> class.  <br /></td></tr>
@@ -171,10 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a416c0de8ffc4d8362be0e9ea89f4711d" id="r_a416c0de8ffc4d8362be0e9ea89f4711d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a416c0de8ffc4d8362be0e9ea89f4711d">operator!=</a> (const <a class="el" href="class_finance___management_1_1_account.html">Account</a> &amp;p_account) const</td></tr>
 <tr class="memdesc:a416c0de8ffc4d8362be0e9ea89f4711d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inequality operator for the <a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> class.  <br /></td></tr>
 <tr class="separator:a416c0de8ffc4d8362be0e9ea89f4711d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b4cb09586e163ff2bc367edbb15636" id="r_a05b4cb09586e163ff2bc367edbb15636"><td class="memItemLeft" align="right" valign="top"><a id="a05b4cb09586e163ff2bc367edbb15636" name="a05b4cb09586e163ff2bc367edbb15636"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>accountFormat</b> () const</td></tr>
-<tr class="memdesc:a05b4cb09586e163ff2bc367edbb15636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the account information as a string. <br /></td></tr>
-<tr class="separator:a05b4cb09586e163ff2bc367edbb15636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef126754d117167cf7058f7da1439d6" id="r_a4ef126754d117167cf7058f7da1439d6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ef126754d117167cf7058f7da1439d6">accountFormat</a> () const</td></tr>
+<tr class="memdesc:a4ef126754d117167cf7058f7da1439d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the account information as a string.  <br /></td></tr>
+<tr class="separator:a4ef126754d117167cf7058f7da1439d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40cad07199a9076700112f7c54aea55b" id="r_a40cad07199a9076700112f7c54aea55b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40cad07199a9076700112f7c54aea55b">verifieInvariant</a> () const</td></tr>
 <tr class="memdesc:a40cad07199a9076700112f7c54aea55b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the class invariants.  <br /></td></tr>
 <tr class="separator:a40cad07199a9076700112f7c54aea55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,8 +194,85 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
   responsibility of the user to provide valid input.
 </pre> <dl class="section invariant"><dt>Invariant</dt><dd>The validity of the account data can be ensured by using the provided setter methods and verifying the state of the object. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="add32d3c6ab0b1784b417dc83d2ecdc27" name="add32d3c6ab0b1784b417dc83d2ecdc27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add32d3c6ab0b1784b417dc83d2ecdc27">&#9670;&#160;</a></span>Account() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Finance_Management::Account::Account </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>p_accountId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>p_accountName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>p_accountType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>p_balance</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;</td>          <td class="paramname"><span class="paramname"><em>p_currency</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor for the <a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_accountId</td><td><a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> ID <br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_accountName</td><td><a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> name <br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_accountType</td><td><a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> type <br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_balance</td><td><a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> balance <br  />
+ </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p_currency</td><td><a class="el" href="class_finance___management_1_1_account.html" title="This class is used for managing and manipulating financial accounts.">Account</a> currency <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>p_accountId &gt; 0 <br  />
+ </dd>
+<dd>
+p_accountName is not empty <br  />
+ </dd>
+<dd>
+p_accountType is not empty <br  />
+ </dd>
+<dd>
+p_currency is not empty <br  />
+ </dd></dl>
+<dl class="section post"><dt>Postcondition</dt><dd>m_accountId == p_accountId <br  />
+ </dd>
+<dd>
+m_accountName == p_accountName <br  />
+ </dd>
+<dd>
+m_accountType == p_accountType <br  />
+ </dd>
+<dd>
+m_balance == p_balance <br  />
+ </dd>
+<dd>
+m_currency == p_currency </dd></dl>
+
+</div>
+</div>
 <a id="ad76b3a765f2c34f7722b0de5f721bad6" name="ad76b3a765f2c34f7722b0de5f721bad6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad76b3a765f2c34f7722b0de5f721bad6">&#9670;&#160;</a></span>Account()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad76b3a765f2c34f7722b0de5f721bad6">&#9670;&#160;</a></span>Account() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,6 +331,26 @@ m_currency == p_account.m_currency </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4ef126754d117167cf7058f7da1439d6" name="a4ef126754d117167cf7058f7da1439d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ef126754d117167cf7058f7da1439d6">&#9670;&#160;</a></span>accountFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Finance_Management::Account::accountFormat </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Formats the account information as a string. </p>
+<dl class="section return"><dt>Returns</dt><dd>a string. </dd></dl>
+
+</div>
+</div>
 <a id="a255e419ef811f8e3d008a0451dacd136" name="a255e419ef811f8e3d008a0451dacd136"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a255e419ef811f8e3d008a0451dacd136">&#9670;&#160;</a></span>getAccountId()</h2>
 
