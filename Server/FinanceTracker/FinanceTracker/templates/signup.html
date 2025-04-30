@@ -1,0 +1,72 @@
+{% extends "template.html" %}
+
+{% block content %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+<ul class="flash-messages">
+    {% for category, message in messages %}
+    <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+</ul>
+  {% endif %}
+{% endwith %}
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/static/scripts/singup.js"></script>
+<!-- Frosted Glass Container with Signup Form -->
+<div class="min-h-screen flex items-center justify-center p-4">
+    <form method="POST" id="signupForm" class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 w-full max-w-md sub_container text-white space-y-6 shadow-lg">
+
+        <h2 class="text-3xl font-bold text-center">Sign Up</h2>
+
+        <!-- Name -->
+        <div class="relative">
+            <input type="text"
+                   name="username"
+                   placeholder="Name"
+                   class="w-full py-3 pl-10 pr-4 rounded-full bg-white/10 border border-white/30 placeholder-white focus:outline-none focus:ring-2 focus:ring-white/70"
+                   required />
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5.121 17.804A7 7 0 1118.88 6.196a7 7 0 01-13.758 11.608z" />
+            </svg>
+        </div>
+
+        <!-- Email -->
+        <div class="relative">
+            <input type="email"
+                   name="email"
+                   placeholder="Email"
+                   class="w-full py-3 pl-10 pr-4 rounded-full bg-white/10 border border-white/30 placeholder-white focus:outline-none focus:ring-2 focus:ring-white/70"
+                   required />
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M16 12H8m8 0l-4-4m4 4l-4 4" />
+            </svg>
+        </div>
+
+        <!-- Password -->
+        <div class="relative">
+            <input type="password"
+                   name="password"
+                   placeholder="Password"
+                   class="w-full py-3 pl-10 pr-4 rounded-full bg-white/10 border border-white/30 placeholder-white focus:outline-none focus:ring-2 focus:ring-white/70"
+                   required />
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 17a1.5 1.5 0 001.5-1.5v-3A1.5 1.5 0 0012 11a1.5 1.5 0 00-1.5 1.5v3A1.5 1.5 0 0012 17zm0 0v1m-6 4h12a2 2 0 002-2v-7a2 2 0 00-2-2h-1.5V9a4.5 4.5 0 00-9 0v2H6a2 2 0 00-2 2v7a2 2 0 002 2z" />
+            </svg>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+                class="w-full py-3 bg-white text-purple-800 font-semibold rounded-full hover:bg-gray-100 transition">
+            Sign Up
+        </button>
+
+        <!-- Footer -->
+        <p class="text-center text-sm">
+            Already have an account? <a href="{{url_for('auth.login')}}" class="font-semibold hover:underline">Login</a>
+        </p>
+        <p class="text-center text-sm" id="flash-messages"></p>
+    </form>
+</div>
+
+{% endblock %}

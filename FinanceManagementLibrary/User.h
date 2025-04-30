@@ -48,6 +48,7 @@ namespace Finance_Management
 		const std::vector<std::unique_ptr<Account>>& getAccounts() const;
 		void verifieInvariant() const;
 		std::string userFormat() const;
+		std::string hashPassword(const std::string& p_password) const;
 
 	private:
 		int m_userId;

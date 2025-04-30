@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+video#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    width: 37vw;
+    height: 22vw;
+}
+
+.sub_container {
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.welcome_p {
+    color: #764ba2;
+}
+
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background: white;
+    color: #764ba2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        border: 3px solid transparent;
+        animation: borderAnimation 1.5s infinite;
+    }
+
+@keyframes borderAnimation {
+    0% {
+        border-color: #764ba2;
+        border-radius: 30px;
+    }
+
+    25% {
+        border-color: #667eea;
+        border-radius: 50px;
+    }
+
+    50% {
+        border-color: #764ba2;
+        border-radius: 30px;
+    }
+
+    75% {
+        border-color: #667eea;
+        border-radius: 50px;
+    }
+
+    100% {
+        border-color: #764ba2;
+        border-radius: 30px;
+    }
+}
+.logo-link {
+    position: absolute;
+    top: -20px; /* Adjust spacing from the top */
+    left: 10px; /* Adjust spacing from the left */
+    display: inline-block;
+    z-index: 100; /* Ensures it stays on top of other elements */
+}
+
+.logo {
+    width: 120px; /* Resize as needed */
+    height: 120px; /* Maintain aspect ratio */
+    cursor: pointer; /* Changes to a pointer on hover */
+}
+#flash-messages {
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #155724;
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+}

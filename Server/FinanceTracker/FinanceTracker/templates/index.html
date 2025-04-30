@@ -1,0 +1,11 @@
+{% extends "template.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="sub_container">
+        <h1>Welcome to YAoo</h1>
+        <p class="welcome_p">Your personal finance tracking solution</p>
+        <a href="{{ url_for('auth.login') }}" class="cta-button">Get Started</a>
+    </div>
+ </div>
+    {% endblock %}

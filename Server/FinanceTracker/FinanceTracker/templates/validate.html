@@ -1,0 +1,35 @@
+{% extends "template.html" %}
+
+{% block content %}
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="/static/scripts/verif.js"></script>
+<!-- Frosted Glass Container with Login Form -->
+<div class="min-h-screen flex items-center justify-center p-4">
+    <form id="verificationForm" method="POST" class="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 w-full max-w-md sub_container text-white space-y-6 shadow-lg">
+
+        <h2 class="text-3xl font-bold text-center">Account Verification</h2>
+
+        <!-- Verificarion Code -->
+        <div class="relative">
+            <input type="text"
+                   name="verifCode"
+                   placeholder="code de verification"
+                   class="w-full py-3 pl-10 pr-4 rounded-full bg-white/10 border border-white/30 placeholder-white focus:outline-none focus:ring-2 focus:ring-white/70"
+                   required />
+            <svg class="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-white opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M5.121 17.804A7 7 0 1118.88 6.196a7 7 0 01-13.758 11.608z" />
+            </svg>
+        </div>
+
+        <!-- Options Row -->
+
+        <!-- Submit Button -->
+        <button type="submit"
+                class="w-full py-3 bg-white text-purple-800 font-semibold rounded-full hover:bg-gray-100 transition">
+            Verify
+        </button>
+
+        <!-- Footer -->
+        <p class="text-center text-sm" id="flash-messages"></p>
+    </form>
+    {% endblock %}
